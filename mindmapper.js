@@ -884,8 +884,20 @@ async function callClaude(systemPrompt, userMessage) {
 }
 
 // ── Quiz Bot: Settings Modal ────────────────────────────────
+function updateHistoryStats() {
+  const history = getQuizHistory();
+  const el = document.getElementById('history-stats');
+  if (history.length === 0) {
+    el.textContent = 'No quiz history yet.';
+  } else {
+    const correct = history.filter(h => h.correct).length;
+    el.textContent = `${history.length} answers recorded (${correct} correct, ${history.length - correct} missed)`;
+  }
+}
+
 function showSettingsModal() {
   document.getElementById('api-key-input').value = getApiKey();
+  updateHistoryStats();
   document.getElementById('settings-modal-backdrop').classList.add('visible');
 }
 function hideSettingsModal() {
@@ -908,6 +920,82 @@ document.getElementById('clear-api-key').addEventListener('click', () => {
   clearApiKey();
   document.getElementById('api-key-input').value = '';
 });
+document.getElementById('clear-history').addEventListener('click', () => {
+  localStorage.removeItem(HISTORY_KEY);
+  updateHistoryStats();
+});
+
+// ── Quiz Bot: Quiz History ───────────────────────────────────
+const HISTORY_KEY = 'mindmapper_quiz_history';
+const MASTERY_THRESHOLD = 3; // correct streak needed to mark mastered
+
+function getQuizHistory() {
+  try { return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; } catch { return []; }
+}
+
+function saveQuizHistory(history) {
+  // Keep last 200 entries to avoid bloating localStorage
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(-200)));
+}
+
+function recordQuizResults(questions, results) {
+  const history = getQuizHistory();
+  const now = Date.now();
+  questions.forEach((q, i) => {
+    const r = results[i];
+    if (!r) return;
+    history.push({
+      concept: q.concept || q.question,
+      question: q.question,
+      correct: r.correct === true,
+      partial: r.correct === null,
+      timestamp: now,
+    });
+  });
+  saveQuizHistory(history);
+}
+
+function buildHistorySummary() {
+  const history = getQuizHistory();
+  if (history.length === 0) return '';
+
+  // Group by concept and compute streaks
+  const concepts = {};
+  for (const h of history) {
+    if (!concepts[h.concept]) concepts[h.concept] = { attempts: 0, correctStreak: 0, lastCorrect: false, missed: 0 };
+    const c = concepts[h.concept];
+    c.attempts++;
+    if (h.correct) {
+      c.correctStreak++;
+      c.lastCorrect = true;
+    } else {
+      c.correctStreak = 0;
+      c.lastCorrect = false;
+      c.missed++;
+    }
+  }
+
+  const missed = [];
+  const mastered = [];
+  const seen = [];
+
+  for (const [concept, stats] of Object.entries(concepts)) {
+    if (stats.correctStreak >= MASTERY_THRESHOLD) {
+      mastered.push(concept);
+    } else if (!stats.lastCorrect || stats.missed > 0) {
+      missed.push(`"${concept}" (missed ${stats.missed}x, streak: ${stats.correctStreak})`);
+    } else {
+      seen.push(concept);
+    }
+  }
+
+  let summary = '\n\n--- STUDENT HISTORY ---\n';
+  if (missed.length) summary += `NEEDS REVIEW (prioritize these):\n${missed.join('\n')}\n\n`;
+  if (mastered.length) summary += `MASTERED (avoid unless no other topics):\n${mastered.join(', ')}\n\n`;
+  if (seen.length) summary += `SEEN BUT NOT MASTERED:\n${seen.join(', ')}\n\n`;
+  summary += `Total past attempts: ${history.length}\n`;
+  return summary;
+}
 
 // ── Quiz Bot: Quiz State ────────────────────────────────────
 const quizState = {
@@ -984,19 +1072,31 @@ async function generateQuiz() {
   else if (format === 'open') formatInstruction = 'Use ONLY "open" (open-ended) type.';
   else formatInstruction = 'Use a mix of "mc", "fill", and "open" types.';
 
-  const systemPrompt = `You are a quiz generator. Given a mind map structure, generate quiz questions that test understanding of the content, relationships, and hierarchy shown in the mind map. Respond ONLY with valid JSON. No markdown fences, no explanation.`;
+  const historySummary = buildHistorySummary();
+
+  const systemPrompt = `You are a quiz generator for a student studying a mind map. Generate questions that test understanding of the content, relationships, and hierarchy.
+
+IMPORTANT: If student history is provided, follow these rules:
+- PRIORITIZE topics marked "NEEDS REVIEW" — re-test these concepts with different question wording
+- AVOID topics marked "MASTERED" unless there are no other topics left
+- Cover untested topics to ensure broad coverage
+- Never repeat the exact same question — rephrase or approach from a different angle
+
+Respond ONLY with valid JSON. No markdown fences, no explanation.`;
 
   const userPrompt = `Here is a mind map:
 
 ${treeText}
-
+${historySummary}
 Generate exactly ${count} quiz questions. ${formatInstruction}
+
+Each question MUST include a "concept" field — a short label for the topic being tested (use the most relevant node text from the mind map).
 
 Return JSON exactly like this structure:
 {"questions":[
-  {"type":"mc","question":"...","options":["A) ...","B) ...","C) ...","D) ..."],"answer":"B","explanation":"..."},
-  {"type":"fill","question":"Statement with ___ blank...","answer":"the answer","explanation":"..."},
-  {"type":"open","question":"Explain...","modelAnswer":"...","explanation":"..."}
+  {"type":"mc","concept":"First Degree Murder","question":"...","options":["A) ...","B) ...","C) ...","D) ..."],"answer":"B","explanation":"..."},
+  {"type":"fill","concept":"Voluntary Manslaughter","question":"Statement with ___ blank...","answer":"the answer","explanation":"..."},
+  {"type":"open","concept":"Self-Defense","question":"Explain...","modelAnswer":"...","explanation":"..."}
 ]}`;
 
   try {
@@ -1145,6 +1245,9 @@ document.getElementById('quiz-next').addEventListener('click', () => {
 function showSummary() {
   showQuizSection('quiz-summary');
   document.getElementById('quiz-header-text').textContent = 'Quiz Results';
+
+  // Record results to history
+  recordQuizResults(quizState.questions, quizState.results);
 
   const total = quizState.results.length;
   const correctCount = quizState.results.filter(r => r.correct === true).length;
