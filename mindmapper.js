@@ -513,13 +513,29 @@ svg.addEventListener('dblclick', e => {
 });
 
 // Zoom
+function applyZoom(factor) {
+  state.zoom = Math.max(0.3, Math.min(3, state.zoom * factor));
+  updateZoomLabel();
+  render();
+}
+
+function updateZoomLabel() {
+  const label = document.getElementById('zoom-level');
+  if (label) label.textContent = Math.round(state.zoom * 100) + '%';
+}
+
 svg.addEventListener('wheel', e => {
   if (!e.ctrlKey) return;
   e.preventDefault();
-  const delta = e.deltaY > 0 ? 0.9 : 1.1;
-  state.zoom = Math.max(0.3, Math.min(3, state.zoom * delta));
-  render();
+  // Gentler zoom: clamp deltaY so trackpad pinch isn't too aggressive
+  const clamped = Math.max(-3, Math.min(3, e.deltaY));
+  const factor = 1 - clamped * 0.03;
+  applyZoom(factor);
 }, { passive: false });
+
+document.getElementById('btn-zoom-in').addEventListener('click', () => applyZoom(1.2));
+document.getElementById('btn-zoom-out').addEventListener('click', () => applyZoom(1 / 1.2));
+document.getElementById('btn-fit-zoom').addEventListener('click', fitView);
 
 // ── Keyboard ───────────────────────────────────────────────
 document.addEventListener('keydown', e => {
@@ -699,8 +715,56 @@ function fitView() {
   state.zoom = Math.min(1.5, Math.min(viewW / treeW, viewH / treeH));
   state.pan.x = (viewW - treeW * state.zoom) / 2 - minX * state.zoom;
   state.pan.y = (viewH - treeH * state.zoom) / 2 - minY * state.zoom;
+  updateZoomLabel();
   render();
 }
+
+// ── Text Tree ──────────────────────────────────────────────
+function generateTextTree(node, prefix, isLast) {
+  if (prefix === undefined) {
+    // Root node — no connector
+    let result = node.text + '\n';
+    for (let i = 0; i < node.children.length; i++) {
+      result += generateTextTree(node.children[i], '', i === node.children.length - 1);
+    }
+    return result;
+  }
+  const connector = isLast ? '└── ' : '├── ';
+  let result = prefix + connector + node.text + '\n';
+  const childPrefix = prefix + (isLast ? '    ' : '│   ');
+  for (let i = 0; i < node.children.length; i++) {
+    result += generateTextTree(node.children[i], childPrefix, i === node.children.length - 1);
+  }
+  return result;
+}
+
+function showTextTree() {
+  if (!state.root) return;
+  const text = generateTextTree(state.root);
+  document.getElementById('tree-modal-text').textContent = text;
+  document.getElementById('tree-modal-backdrop').classList.add('visible');
+}
+
+function hideTextTree() {
+  document.getElementById('tree-modal-backdrop').classList.remove('visible');
+}
+
+document.getElementById('btn-print-tree').addEventListener('click', showTextTree);
+document.getElementById('tree-modal-close').addEventListener('click', hideTextTree);
+document.getElementById('tree-modal-backdrop').addEventListener('click', e => {
+  if (e.target === e.currentTarget) hideTextTree();
+});
+document.getElementById('tree-copy').addEventListener('click', () => {
+  const text = document.getElementById('tree-modal-text').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('tree-copy');
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = 'Copy to Clipboard'; }, 1200);
+  });
+});
+document.getElementById('tree-print').addEventListener('click', () => {
+  window.print();
+});
 
 // ── Toolbar ────────────────────────────────────────────────
 document.getElementById('btn-new').addEventListener('click', newMap);

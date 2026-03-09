@@ -46,12 +46,79 @@
   .collapse-circle { cursor: pointer; fill: #2d2d44; stroke: #888; stroke-width: 1.5; }
   .collapse-text { fill: #ccc; font-size: 12px; font-family: inherit; pointer-events: none; user-select: none; }
 
+  #zoom-controls {
+    position: fixed; bottom: 20px; right: 20px; z-index: 100;
+    display: flex; flex-direction: column; gap: 4px; align-items: center;
+  }
+  #zoom-controls button {
+    width: 36px; height: 36px; border: none; border-radius: 6px;
+    background: #16213e; color: #e0e0e0; font-size: 18px; line-height: 1;
+    cursor: pointer; transition: background 0.15s;
+    border: 1px solid #0f3460;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #zoom-controls button:hover { background: #1a5276; }
+  #zoom-level {
+    font-size: 11px; color: #888; user-select: none; margin: 2px 0;
+  }
+
   #rename-input {
     position: fixed; z-index: 200; display: none;
     padding: 6px 10px; border: 2px solid #ffd700; border-radius: 4px;
     background: #1a1a2e; color: #fff; font-size: 13px; font-family: inherit;
     outline: none; min-width: 80px; resize: none; overflow: hidden;
     line-height: 1.4;
+  }
+
+  /* Text Tree Modal */
+  #tree-modal-backdrop {
+    position: fixed; inset: 0; z-index: 300;
+    background: rgba(0,0,0,0.6); display: none;
+    align-items: center; justify-content: center;
+  }
+  #tree-modal-backdrop.visible { display: flex; }
+  #tree-modal {
+    background: #1a1a2e; border: 1px solid #0f3460; border-radius: 10px;
+    width: min(720px, 90vw); max-height: 80vh; display: flex; flex-direction: column;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  }
+  #tree-modal-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px; border-bottom: 1px solid #0f3460;
+  }
+  #tree-modal-header span { font-weight: 600; font-size: 15px; color: #a29bfe; }
+  #tree-modal-header button {
+    background: none; border: none; color: #888; font-size: 22px;
+    cursor: pointer; line-height: 1; padding: 0 4px;
+  }
+  #tree-modal-header button:hover { color: #fff; }
+  #tree-modal-body {
+    flex: 1; overflow: auto; padding: 16px;
+  }
+  #tree-modal-body pre {
+    margin: 0; font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+    font-size: 13px; line-height: 1.5; color: #e0e0e0; white-space: pre;
+    tab-size: 4;
+  }
+  #tree-modal-footer {
+    display: flex; gap: 8px; padding: 12px 16px;
+    border-top: 1px solid #0f3460;
+  }
+  #tree-modal-footer button {
+    padding: 7px 18px; border: none; border-radius: 5px;
+    font-size: 13px; cursor: pointer; transition: background 0.15s;
+  }
+  #tree-modal-footer .btn-copy { background: #0f3460; color: #e0e0e0; }
+  #tree-modal-footer .btn-copy:hover { background: #1a5276; }
+  #tree-modal-footer .btn-print { background: #6C5CE7; color: #fff; }
+  #tree-modal-footer .btn-print:hover { background: #7d6ff0; }
+
+  @media print {
+    body > *:not(#tree-modal-backdrop) { display: none !important; }
+    #tree-modal-backdrop { position: static; background: none; display: block !important; }
+    #tree-modal { width: 100%; max-height: none; border: none; box-shadow: none; background: #fff; }
+    #tree-modal-header, #tree-modal-footer { display: none !important; }
+    #tree-modal-body pre { color: #000; font-size: 11pt; }
   }
 </style>
 </head>
@@ -72,13 +139,38 @@
   <button id="btn-move-down">Move Down</button>
   <div class="sep"></div>
   <button id="btn-fit">Fit View</button>
+  <div class="sep"></div>
+  <button id="btn-print-tree">Print Tree</button>
 </div>
 
 <svg id="canvas">
   <g id="viewport"></g>
 </svg>
 
+<div id="zoom-controls">
+  <button id="btn-zoom-in">+</button>
+  <span id="zoom-level">100%</span>
+  <button id="btn-zoom-out">-</button>
+  <button id="btn-fit-zoom" title="Fit view" style="font-size:13px;">Fit</button>
+</div>
+
 <textarea id="rename-input" rows="1"></textarea>
+
+<div id="tree-modal-backdrop">
+  <div id="tree-modal">
+    <div id="tree-modal-header">
+      <span>Text Tree</span>
+      <button id="tree-modal-close">&times;</button>
+    </div>
+    <div id="tree-modal-body">
+      <pre id="tree-modal-text"></pre>
+    </div>
+    <div id="tree-modal-footer">
+      <button class="btn-copy" id="tree-copy">Copy to Clipboard</button>
+      <button class="btn-print" id="tree-print">Print</button>
+    </div>
+  </div>
+</div>
 
 <script src="mindmapper.js"></script>
 </body>
