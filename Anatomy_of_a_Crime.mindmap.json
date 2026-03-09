@@ -9,7 +9,7 @@
       {
         "id": "node_92",
         "text": "Homicide",
-        "collapsed": true,
+        "collapsed": false,
         "children": [
           {
             "id": "node_2",
@@ -18,7 +18,7 @@
             "children": [
               {
                 "id": "node_67",
-                "text": "Malice Aforethought - Intent to kill. Intent to do GGI. Extreme Recklessness. Intent to commit dangerous Felony",
+                "text": "Malice Aforethought 4 Items - Intent to kill. Intent to do Grievous Bodily Injury. Extreme Recklessness. Intent to commit dangerous Felony",
                 "collapsed": false,
                 "children": [
                   {
@@ -51,16 +51,61 @@
                             "children": []
                           }
                         ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "node_6",
+                    "text": "Second Degree",
+                    "collapsed": true,
+                    "children": [
+                      {
+                        "id": "node_7",
+                        "text": "Intent to Kill but not premeditated.",
+                        "collapsed": false,
+                        "children": []
                       },
                       {
-                        "id": "node_5",
-                        "text": "Felony Murder",
+                        "id": "node_8",
+                        "text": "Extreme Recklessness",
+                        "collapsed": false,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "node_5",
+                    "text": "Felony Murder",
+                    "collapsed": true,
+                    "children": [
+                      {
+                        "id": "node_141",
+                        "text": "Why do we have it? To make felons be more careful doing a felony.",
                         "collapsed": true,
+                        "children": [
+                          {
+                            "id": "node_139",
+                            "text": "MPC calls it \"Indefensible in principle\"",
+                            "collapsed": false,
+                            "children": []
+                          },
+                          {
+                            "id": "node_142",
+                            "text": "\"Destroys the symmetry of the law\" People v. Fuller",
+                            "collapsed": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": "node_143",
+                        "text": "\"One is guilty of murder if a death results from the conduct furing the commission or attempted commissoin of any felonly\" - a form of strict liability for homicide. You don't need to prove Intent, willfullness, deliberation or premeditation",
+                        "collapsed": false,
                         "children": [
                           {
                             "id": "node_37",
                             "text": "Inherently Dangerous",
-                            "collapsed": false,
+                            "collapsed": true,
                             "children": [
                               {
                                 "id": "node_51",
@@ -105,9 +150,40 @@
                             ]
                           },
                           {
+                            "id": "node_28",
+                            "text": "Enumerated Item - making it first degree Murder",
+                            "collapsed": true,
+                            "children": [
+                              {
+                                "id": "node_41",
+                                "text": "Rape",
+                                "collapsed": false,
+                                "children": []
+                              },
+                              {
+                                "id": "node_42",
+                                "text": "Robbery",
+                                "collapsed": false,
+                                "children": []
+                              },
+                              {
+                                "id": "node_43",
+                                "text": "Burglary",
+                                "collapsed": false,
+                                "children": []
+                              },
+                              {
+                                "id": "node_44",
+                                "text": "Arson",
+                                "collapsed": false,
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
                             "id": "node_38",
                             "text": "Merger Doctrine (Independant Felony)",
-                            "collapsed": false,
+                            "collapsed": true,
                             "children": [
                               {
                                 "id": "node_57",
@@ -160,7 +236,7 @@
                           {
                             "id": "node_40",
                             "text": "Non-felony killing",
-                            "collapsed": false,
+                            "collapsed": true,
                             "children": [
                               {
                                 "id": "node_63",
@@ -189,101 +265,6 @@
                                 ]
                               }
                             ]
-                          },
-                          {
-                            "id": "node_50",
-                            "text": "Common Law",
-                            "collapsed": false,
-                            "children": [
-                              {
-                                "id": "node_28",
-                                "text": "Enumerated Item",
-                                "collapsed": true,
-                                "children": [
-                                  {
-                                    "id": "node_41",
-                                    "text": "Rape",
-                                    "collapsed": false,
-                                    "children": []
-                                  },
-                                  {
-                                    "id": "node_42",
-                                    "text": "Robbery",
-                                    "collapsed": false,
-                                    "children": []
-                                  },
-                                  {
-                                    "id": "node_43",
-                                    "text": "Burglary",
-                                    "collapsed": false,
-                                    "children": []
-                                  },
-                                  {
-                                    "id": "node_44",
-                                    "text": "Arson",
-                                    "collapsed": false,
-                                    "children": []
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "id": "node_6",
-                    "text": "Second Degree",
-                    "collapsed": true,
-                    "children": [
-                      {
-                        "id": "node_7",
-                        "text": "Intent to Kill but not premeditated.",
-                        "collapsed": false,
-                        "children": []
-                      },
-                      {
-                        "id": "node_8",
-                        "text": "Extreme Recklessness",
-                        "collapsed": false,
-                        "children": []
-                      },
-                      {
-                        "id": "node_35",
-                        "text": "Felony Murder",
-                        "collapsed": false,
-                        "children": [
-                          {
-                            "id": "node_36",
-                            "text": "Non-enumerated",
-                            "collapsed": true,
-                            "children": [
-                              {
-                                "id": "node_45",
-                                "text": "Not Rape",
-                                "collapsed": false,
-                                "children": []
-                              },
-                              {
-                                "id": "node_46",
-                                "text": "Not Robbery",
-                                "collapsed": false,
-                                "children": []
-                              },
-                              {
-                                "id": "node_47",
-                                "text": "Not Burglary",
-                                "collapsed": false,
-                                "children": []
-                              },
-                              {
-                                "id": "node_48",
-                                "text": "Not Arson",
-                                "collapsed": false,
-                                "children": []
-                              }
-                            ]
                           }
                         ]
                       }
@@ -305,8 +286,8 @@
                 "children": [
                   {
                     "id": "node_68",
-                    "text": "Common Law",
-                    "collapsed": false,
+                    "text": "Common Law  - 4 Elements",
+                    "collapsed": true,
                     "children": [
                       {
                         "id": "node_11",
@@ -317,7 +298,7 @@
                       {
                         "id": "node_33",
                         "text": "Adequate Provacation - 5 Rigid Categories.",
-                        "collapsed": true,
+                        "collapsed": false,
                         "children": [
                           {
                             "id": "node_29",
@@ -368,7 +349,7 @@
                   {
                     "id": "node_69",
                     "text": "Modern Approach",
-                    "collapsed": false,
+                    "collapsed": true,
                     "children": [
                       {
                         "id": "node_75",
@@ -393,7 +374,7 @@
                   {
                     "id": "node_70",
                     "text": "Model Penal Code",
-                    "collapsed": false,
+                    "collapsed": true,
                     "children": [
                       {
                         "id": "node_71",
@@ -414,7 +395,7 @@
               {
                 "id": "node_13",
                 "text": "Involuntary Manslaughter",
-                "collapsed": false,
+                "collapsed": true,
                 "children": [
                   {
                     "id": "node_14",
@@ -442,7 +423,7 @@
           {
             "id": "node_94",
             "text": "Utilitarian",
-            "collapsed": true,
+            "collapsed": false,
             "children": [
               {
                 "id": "node_96",
@@ -473,7 +454,7 @@
           {
             "id": "node_95",
             "text": "Retributive",
-            "collapsed": true,
+            "collapsed": false,
             "children": [
               {
                 "id": "node_100",
@@ -493,8 +474,8 @@
       },
       {
         "id": "node_103",
-        "text": "Actus Reus",
-        "collapsed": false,
+        "text": "Actus Reus - Voluntary Act",
+        "collapsed": true,
         "children": [
           {
             "id": "node_104",
@@ -720,7 +701,7 @@
           {
             "id": "node_22",
             "text": "Mistake of Fact",
-            "collapsed": false,
+            "collapsed": true,
             "children": [
               {
                 "id": "node_78",
@@ -750,8 +731,8 @@
               },
               {
                 "id": "node_79",
-                "text": "General Intent - Reasonable Mistakes are a defense.",
-                "collapsed": true,
+                "text": "General Intent - Must be honest, genuine and reasonable.",
+                "collapsed": false,
                 "children": [
                   {
                     "id": "node_80",
@@ -766,7 +747,13 @@
                       },
                       {
                         "id": "node_85",
-                        "text": "New Node",
+                        "text": "Assault",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_138",
+                        "text": "Battery",
                         "collapsed": false,
                         "children": []
                       }
