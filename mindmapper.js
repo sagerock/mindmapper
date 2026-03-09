@@ -720,18 +720,48 @@ function fitView() {
 }
 
 // ── Text Tree ──────────────────────────────────────────────
+const TREE_WRAP_WIDTH = 80;
+
+function wrapTreeText(text, prefixLen, wrapWidth) {
+  const maxText = wrapWidth - prefixLen;
+  if (maxText <= 10 || text.length <= maxText) return [text];
+  const lines = [];
+  const words = text.split(/\s+/);
+  let line = '';
+  for (const word of words) {
+    const test = line ? line + ' ' + word : word;
+    if (test.length > maxText && line) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = test;
+    }
+  }
+  if (line) lines.push(line);
+  return lines.length ? lines : [text];
+}
+
 function generateTextTree(node, prefix, isLast) {
   if (prefix === undefined) {
     // Root node — no connector
-    let result = node.text + '\n';
+    const wrapped = wrapTreeText(node.text, 0, TREE_WRAP_WIDTH);
+    let result = wrapped[0] + '\n';
+    for (let i = 1; i < wrapped.length; i++) {
+      result += wrapped[i] + '\n';
+    }
     for (let i = 0; i < node.children.length; i++) {
       result += generateTextTree(node.children[i], '', i === node.children.length - 1);
     }
     return result;
   }
   const connector = isLast ? '└── ' : '├── ';
-  let result = prefix + connector + node.text + '\n';
-  const childPrefix = prefix + (isLast ? '    ' : '│   ');
+  const continuePfx = prefix + (isLast ? '    ' : '│   ');
+  const wrapped = wrapTreeText(node.text, (prefix + connector).length, TREE_WRAP_WIDTH);
+  let result = prefix + connector + wrapped[0] + '\n';
+  for (let i = 1; i < wrapped.length; i++) {
+    result += continuePfx + wrapped[i] + '\n';
+  }
+  const childPrefix = continuePfx;
   for (let i = 0; i < node.children.length; i++) {
     result += generateTextTree(node.children[i], childPrefix, i === node.children.length - 1);
   }

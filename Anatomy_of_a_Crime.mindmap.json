@@ -19,7 +19,7 @@
               {
                 "id": "node_67",
                 "text": "Malice Aforethought 4 Items - Intent to kill. Intent to do Grievous Bodily Injury. Extreme Recklessness. Intent to commit dangerous Felony",
-                "collapsed": false,
+                "collapsed": true,
                 "children": [
                   {
                     "id": "node_3",
@@ -305,7 +305,7 @@
           {
             "id": "node_9",
             "text": "Manslaughter",
-            "collapsed": true,
+            "collapsed": false,
             "children": [
               {
                 "id": "node_10",
@@ -377,7 +377,7 @@
                   {
                     "id": "node_69",
                     "text": "Modern Approach",
-                    "collapsed": true,
+                    "collapsed": false,
                     "children": [
                       {
                         "id": "node_75",
@@ -402,7 +402,7 @@
                   {
                     "id": "node_70",
                     "text": "Model Penal Code",
-                    "collapsed": true,
+                    "collapsed": false,
                     "children": [
                       {
                         "id": "node_71",
