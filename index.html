@@ -113,6 +113,138 @@
   #tree-modal-footer .btn-print { background: #6C5CE7; color: #fff; }
   #tree-modal-footer .btn-print:hover { background: #7d6ff0; }
 
+  /* Shared modal styles */
+  .modal-backdrop {
+    position: fixed; inset: 0; z-index: 300;
+    background: rgba(0,0,0,0.6); display: none;
+    align-items: center; justify-content: center;
+  }
+  .modal-backdrop.visible { display: flex; }
+  .modal-panel {
+    background: #1a1a2e; border: 1px solid #0f3460; border-radius: 10px;
+    width: min(560px, 90vw); max-height: 85vh; display: flex; flex-direction: column;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  }
+  .modal-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px; border-bottom: 1px solid #0f3460;
+  }
+  .modal-header span { font-weight: 600; font-size: 15px; color: #a29bfe; }
+  .modal-header button {
+    background: none; border: none; color: #888; font-size: 22px;
+    cursor: pointer; line-height: 1; padding: 0 4px;
+  }
+  .modal-header button:hover { color: #fff; }
+  .modal-body { flex: 1; overflow: auto; padding: 16px; }
+  .modal-footer {
+    display: flex; gap: 8px; padding: 12px 16px;
+    border-top: 1px solid #0f3460;
+  }
+  .btn-primary {
+    padding: 8px 20px; border: none; border-radius: 5px;
+    background: #6C5CE7; color: #fff; font-size: 13px;
+    cursor: pointer; transition: background 0.15s;
+  }
+  .btn-primary:hover { background: #7d6ff0; }
+  .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+  .btn-secondary {
+    padding: 8px 20px; border: none; border-radius: 5px;
+    background: #0f3460; color: #e0e0e0; font-size: 13px;
+    cursor: pointer; transition: background 0.15s;
+  }
+  .btn-secondary:hover { background: #1a5276; }
+
+  /* Settings modal */
+  #settings-modal-backdrop { z-index: 400; }
+  .settings-field { margin-bottom: 12px; }
+  .settings-field label { display: block; font-size: 13px; color: #a29bfe; margin-bottom: 6px; }
+  .settings-field input {
+    width: 100%; padding: 8px 10px; border: 1px solid #0f3460; border-radius: 4px;
+    background: #16213e; color: #e0e0e0; font-size: 13px; font-family: monospace;
+    outline: none;
+  }
+  .settings-field input:focus { border-color: #a29bfe; }
+  .settings-hint { font-size: 11px; color: #666; margin-top: 8px; line-height: 1.4; }
+
+  /* Quiz config modal */
+  .config-field { margin-bottom: 16px; }
+  .config-field label { display: block; font-size: 13px; color: #a29bfe; margin-bottom: 6px; }
+  .config-field select {
+    width: 100%; padding: 8px 10px; border: 1px solid #0f3460; border-radius: 4px;
+    background: #16213e; color: #e0e0e0; font-size: 13px; outline: none;
+  }
+  .config-field select:focus { border-color: #a29bfe; }
+  .count-row { display: flex; align-items: center; gap: 12px; }
+  .count-row input[type=range] { flex: 1; accent-color: #6C5CE7; }
+  .count-row span { font-size: 14px; font-weight: 600; color: #e0e0e0; min-width: 20px; }
+
+  /* Quiz modal */
+  #quiz-modal-backdrop { z-index: 350; }
+  .quiz-question {
+    font-size: 15px; line-height: 1.5; color: #e0e0e0; margin-bottom: 16px;
+  }
+  .quiz-mc-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .quiz-mc-btn {
+    width: 100%; padding: 10px 14px; text-align: left; border: 2px solid #0f3460;
+    border-radius: 6px; background: #16213e; color: #e0e0e0; font-size: 13px;
+    cursor: pointer; transition: border-color 0.15s, background 0.15s;
+  }
+  .quiz-mc-btn:hover { border-color: #4a4a6a; background: #1a2a4e; }
+  .quiz-mc-btn.selected { border-color: #a29bfe; background: #2a2060; }
+  .quiz-mc-btn:disabled { cursor: default; opacity: 0.7; }
+  .quiz-mc-btn.correct { border-color: #00B894; background: #0a3d2e; }
+  .quiz-mc-btn.incorrect { border-color: #e17055; background: #3d1a0a; }
+  .quiz-answer-input {
+    width: 100%; padding: 10px; border: 1px solid #0f3460; border-radius: 4px;
+    background: #16213e; color: #e0e0e0; font-size: 13px; font-family: inherit;
+    outline: none; resize: vertical; min-height: 60px; margin-bottom: 12px;
+  }
+  .quiz-answer-input:focus { border-color: #a29bfe; }
+  .quiz-feedback {
+    padding: 14px; border-radius: 8px; margin-bottom: 14px;
+  }
+  .quiz-feedback.correct { background: rgba(0,184,148,0.15); border: 1px solid #00B894; }
+  .quiz-feedback.incorrect { background: rgba(225,112,85,0.15); border: 1px solid #e17055; }
+  .quiz-feedback.partial { background: rgba(253,203,110,0.15); border: 1px solid #fdcb6e; }
+  .quiz-feedback-badge {
+    font-weight: 700; font-size: 14px; margin-bottom: 6px;
+  }
+  .quiz-feedback.correct .quiz-feedback-badge { color: #00B894; }
+  .quiz-feedback.incorrect .quiz-feedback-badge { color: #e17055; }
+  .quiz-feedback.partial .quiz-feedback-badge { color: #fdcb6e; }
+  .quiz-feedback-text { font-size: 13px; color: #ccc; line-height: 1.5; }
+  .quiz-score-display {
+    text-align: center; padding: 24px 0;
+  }
+  .quiz-score-number {
+    font-size: 48px; font-weight: 700; margin-bottom: 4px;
+  }
+  .quiz-score-label { font-size: 14px; color: #888; }
+  .quiz-review-item {
+    padding: 10px 12px; border-radius: 6px; margin-bottom: 8px;
+    background: #16213e; border-left: 3px solid #0f3460;
+  }
+  .quiz-review-item.correct { border-left-color: #00B894; }
+  .quiz-review-item.incorrect { border-left-color: #e17055; }
+  .quiz-review-item.partial { border-left-color: #fdcb6e; }
+  .quiz-review-q { font-size: 13px; color: #e0e0e0; margin-bottom: 4px; }
+  .quiz-review-a { font-size: 12px; color: #888; }
+  .quiz-summary-buttons { display: flex; gap: 8px; justify-content: center; margin-top: 16px; }
+
+  /* Spinner */
+  .quiz-spinner {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 40px 0; gap: 16px;
+  }
+  .quiz-spinner-ring {
+    width: 40px; height: 40px; border: 3px solid #0f3460;
+    border-top-color: #a29bfe; border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .quiz-spinner p { color: #888; font-size: 13px; }
+  .quiz-error { color: #e17055; font-size: 13px; padding: 12px; text-align: center; }
+
   @media print {
     body > *:not(#tree-modal-backdrop) { display: none !important; }
     #tree-modal-backdrop { position: static; background: none; display: block !important; }
@@ -141,6 +273,9 @@
   <button id="btn-fit">Fit View</button>
   <div class="sep"></div>
   <button id="btn-print-tree">Print Tree</button>
+  <div class="sep"></div>
+  <button id="btn-quiz">Quiz Me</button>
+  <button id="btn-settings" title="API Settings">&#9881;</button>
 </div>
 
 <svg id="canvas">
@@ -168,6 +303,105 @@
     <div id="tree-modal-footer">
       <button class="btn-copy" id="tree-copy">Copy to Clipboard</button>
       <button class="btn-print" id="tree-print">Print</button>
+    </div>
+  </div>
+</div>
+
+<!-- Settings Modal -->
+<div id="settings-modal-backdrop" class="modal-backdrop">
+  <div class="modal-panel">
+    <div class="modal-header">
+      <span>API Settings</span>
+      <button id="settings-modal-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="settings-field">
+        <label for="api-key-input">Anthropic API Key</label>
+        <input type="password" id="api-key-input" placeholder="sk-ant-..." />
+      </div>
+      <p class="settings-hint">Your key is stored locally in your browser and only sent to api.anthropic.com for quiz generation.</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary" id="save-api-key">Save Key</button>
+      <button class="btn-secondary" id="clear-api-key">Clear Key</button>
+    </div>
+  </div>
+</div>
+
+<!-- Quiz Config Modal -->
+<div id="quiz-config-backdrop" class="modal-backdrop">
+  <div class="modal-panel">
+    <div class="modal-header">
+      <span>Quiz Settings</span>
+      <button id="quiz-config-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="config-field">
+        <label>Question Format</label>
+        <select id="quiz-format">
+          <option value="mixed">Mixed (all types)</option>
+          <option value="mc">Multiple Choice only</option>
+          <option value="fill">Fill in the Blank only</option>
+          <option value="open">Open-ended only</option>
+        </select>
+      </div>
+      <div class="config-field">
+        <label>Number of Questions</label>
+        <div class="count-row">
+          <input type="range" id="quiz-count" min="3" max="10" value="5" />
+          <span id="quiz-count-label">5</span>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary" id="quiz-start">Generate Quiz</button>
+    </div>
+  </div>
+</div>
+
+<!-- Quiz Modal -->
+<div id="quiz-modal-backdrop" class="modal-backdrop">
+  <div class="modal-panel" style="width:min(620px,90vw);">
+    <div class="modal-header">
+      <span id="quiz-header-text">Quiz</span>
+      <button id="quiz-modal-close">&times;</button>
+    </div>
+    <div class="modal-body" id="quiz-modal-body">
+      <!-- Loading -->
+      <div id="quiz-loading" class="quiz-spinner" style="display:none;">
+        <div class="quiz-spinner-ring"></div>
+        <p>Generating questions from your mind map...</p>
+      </div>
+      <!-- Error -->
+      <div id="quiz-error" class="quiz-error" style="display:none;"></div>
+      <!-- Question -->
+      <div id="quiz-question-area" style="display:none;">
+        <div id="quiz-question-text" class="quiz-question"></div>
+        <div id="quiz-mc-options" class="quiz-mc-options"></div>
+        <textarea id="quiz-answer-input" class="quiz-answer-input" placeholder="Type your answer..." rows="3" style="display:none;"></textarea>
+        <button id="quiz-submit-answer" class="btn-primary" disabled>Submit Answer</button>
+      </div>
+      <!-- Feedback -->
+      <div id="quiz-feedback-area" style="display:none;">
+        <div id="quiz-question-review" class="quiz-question" style="margin-bottom:12px;"></div>
+        <div id="quiz-feedback-box" class="quiz-feedback">
+          <div class="quiz-feedback-badge" id="quiz-feedback-badge"></div>
+          <div class="quiz-feedback-text" id="quiz-feedback-text"></div>
+        </div>
+        <button id="quiz-next" class="btn-primary">Next Question</button>
+      </div>
+      <!-- Summary -->
+      <div id="quiz-summary" style="display:none;">
+        <div class="quiz-score-display">
+          <div class="quiz-score-number" id="quiz-score-number"></div>
+          <div class="quiz-score-label" id="quiz-score-label"></div>
+        </div>
+        <div id="quiz-review-list"></div>
+        <div class="quiz-summary-buttons">
+          <button class="btn-secondary" id="quiz-retry">New Quiz</button>
+          <button class="btn-primary" id="quiz-close-final">Close</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

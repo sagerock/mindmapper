@@ -540,6 +540,9 @@ document.getElementById('btn-fit-zoom').addEventListener('click', fitView);
 // ── Keyboard ───────────────────────────────────────────────
 document.addEventListener('keydown', e => {
   if (renameInput.style.display !== 'none') return; // editing
+  // Don't intercept keys when quiz/settings modals are open
+  const modalOpen = document.querySelector('.modal-backdrop.visible');
+  if (modalOpen) return;
 
   if (e.key === 's' && (e.ctrlKey || e.metaKey)) {
     e.preventDefault();
@@ -838,3 +841,379 @@ function init() {
 }
 
 init();
+
+// ── Quiz Bot: API Layer ─────────────────────────────────────
+const API_KEY_STORAGE = 'mindmapper_api_key';
+
+function getApiKey() { return localStorage.getItem(API_KEY_STORAGE) || ''; }
+function setApiKey(key) { localStorage.setItem(API_KEY_STORAGE, key); }
+function clearApiKey() { localStorage.removeItem(API_KEY_STORAGE); }
+
+function parseJsonFromClaude(text) {
+  const cleaned = text.replace(/^```json?\s*/m, '').replace(/\s*```\s*$/m, '').trim();
+  return JSON.parse(cleaned);
+}
+
+async function callClaude(systemPrompt, userMessage) {
+  const apiKey = getApiKey();
+  if (!apiKey) throw new Error('API key not set');
+
+  const response = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true',
+    },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 2048,
+      system: systemPrompt,
+      messages: [{ role: 'user', content: userMessage }],
+    }),
+  });
+
+  if (!response.ok) {
+    const err = await response.json().catch(() => ({}));
+    throw new Error(err.error?.message || `API error ${response.status}`);
+  }
+
+  const data = await response.json();
+  return data.content[0].text;
+}
+
+// ── Quiz Bot: Settings Modal ────────────────────────────────
+function showSettingsModal() {
+  document.getElementById('api-key-input').value = getApiKey();
+  document.getElementById('settings-modal-backdrop').classList.add('visible');
+}
+function hideSettingsModal() {
+  document.getElementById('settings-modal-backdrop').classList.remove('visible');
+}
+
+document.getElementById('btn-settings').addEventListener('click', showSettingsModal);
+document.getElementById('settings-modal-close').addEventListener('click', hideSettingsModal);
+document.getElementById('settings-modal-backdrop').addEventListener('click', e => {
+  if (e.target === e.currentTarget) hideSettingsModal();
+});
+document.getElementById('save-api-key').addEventListener('click', () => {
+  const key = document.getElementById('api-key-input').value.trim();
+  if (key) {
+    setApiKey(key);
+    hideSettingsModal();
+  }
+});
+document.getElementById('clear-api-key').addEventListener('click', () => {
+  clearApiKey();
+  document.getElementById('api-key-input').value = '';
+});
+
+// ── Quiz Bot: Quiz State ────────────────────────────────────
+const quizState = {
+  questions: [],
+  currentIndex: 0,
+  results: [],       // { correct: bool|null, feedback: string, userAnswer: string }
+  selectedMC: null,   // selected MC letter
+  isLoading: false,
+};
+
+// ── Quiz Bot: Config Modal ──────────────────────────────────
+function showQuizConfig() {
+  if (!getApiKey()) {
+    showSettingsModal();
+    return;
+  }
+  if (!state.root || state.root.children.length === 0) {
+    alert('Add some content to your mind map first.');
+    return;
+  }
+  document.getElementById('quiz-config-backdrop').classList.add('visible');
+}
+function hideQuizConfig() {
+  document.getElementById('quiz-config-backdrop').classList.remove('visible');
+}
+
+document.getElementById('btn-quiz').addEventListener('click', showQuizConfig);
+document.getElementById('quiz-config-close').addEventListener('click', hideQuizConfig);
+document.getElementById('quiz-config-backdrop').addEventListener('click', e => {
+  if (e.target === e.currentTarget) hideQuizConfig();
+});
+
+const quizCountSlider = document.getElementById('quiz-count');
+const quizCountLabel = document.getElementById('quiz-count-label');
+quizCountSlider.addEventListener('input', () => {
+  quizCountLabel.textContent = quizCountSlider.value;
+});
+
+// ── Quiz Bot: Quiz Modal ────────────────────────────────────
+function showQuizModal() {
+  document.getElementById('quiz-modal-backdrop').classList.add('visible');
+}
+function hideQuizModal() {
+  document.getElementById('quiz-modal-backdrop').classList.remove('visible');
+}
+
+document.getElementById('quiz-modal-close').addEventListener('click', hideQuizModal);
+document.getElementById('quiz-modal-backdrop').addEventListener('click', e => {
+  if (e.target === e.currentTarget) hideQuizModal();
+});
+
+function showQuizSection(id) {
+  ['quiz-loading', 'quiz-error', 'quiz-question-area', 'quiz-feedback-area', 'quiz-summary'].forEach(s => {
+    document.getElementById(s).style.display = 'none';
+  });
+  document.getElementById(id).style.display = '';
+}
+
+// ── Quiz Bot: Generate Questions ────────────────────────────
+async function generateQuiz() {
+  const format = document.getElementById('quiz-format').value;
+  const count = parseInt(quizCountSlider.value);
+
+  hideQuizConfig();
+  showQuizModal();
+  showQuizSection('quiz-loading');
+  document.getElementById('quiz-header-text').textContent = 'Quiz';
+
+  const treeText = generateTextTree(state.root);
+
+  let formatInstruction = '';
+  if (format === 'mc') formatInstruction = 'Use ONLY "mc" (multiple choice) type.';
+  else if (format === 'fill') formatInstruction = 'Use ONLY "fill" (fill-in-the-blank) type.';
+  else if (format === 'open') formatInstruction = 'Use ONLY "open" (open-ended) type.';
+  else formatInstruction = 'Use a mix of "mc", "fill", and "open" types.';
+
+  const systemPrompt = `You are a quiz generator. Given a mind map structure, generate quiz questions that test understanding of the content, relationships, and hierarchy shown in the mind map. Respond ONLY with valid JSON. No markdown fences, no explanation.`;
+
+  const userPrompt = `Here is a mind map:
+
+${treeText}
+
+Generate exactly ${count} quiz questions. ${formatInstruction}
+
+Return JSON exactly like this structure:
+{"questions":[
+  {"type":"mc","question":"...","options":["A) ...","B) ...","C) ...","D) ..."],"answer":"B","explanation":"..."},
+  {"type":"fill","question":"Statement with ___ blank...","answer":"the answer","explanation":"..."},
+  {"type":"open","question":"Explain...","modelAnswer":"...","explanation":"..."}
+]}`;
+
+  try {
+    const raw = await callClaude(systemPrompt, userPrompt);
+    const data = parseJsonFromClaude(raw);
+    if (!data.questions || !data.questions.length) throw new Error('No questions generated');
+    quizState.questions = data.questions;
+    quizState.currentIndex = 0;
+    quizState.results = [];
+    quizState.selectedMC = null;
+    showQuestion();
+  } catch (err) {
+    showQuizSection('quiz-error');
+    document.getElementById('quiz-error').textContent = 'Failed to generate quiz: ' + err.message;
+  }
+}
+
+document.getElementById('quiz-start').addEventListener('click', generateQuiz);
+
+// ── Quiz Bot: Show Question ─────────────────────────────────
+function showQuestion() {
+  const q = quizState.questions[quizState.currentIndex];
+  const total = quizState.questions.length;
+  document.getElementById('quiz-header-text').textContent = `Question ${quizState.currentIndex + 1} of ${total}`;
+
+  showQuizSection('quiz-question-area');
+
+  const questionText = document.getElementById('quiz-question-text');
+  const mcOptions = document.getElementById('quiz-mc-options');
+  const answerInput = document.getElementById('quiz-answer-input');
+  const submitBtn = document.getElementById('quiz-submit-answer');
+
+  questionText.textContent = q.question;
+  mcOptions.innerHTML = '';
+  answerInput.style.display = 'none';
+  answerInput.value = '';
+  submitBtn.disabled = true;
+  quizState.selectedMC = null;
+
+  if (q.type === 'mc') {
+    mcOptions.style.display = '';
+    for (const opt of q.options) {
+      const btn = document.createElement('button');
+      btn.className = 'quiz-mc-btn';
+      btn.textContent = opt;
+      btn.dataset.letter = opt.charAt(0);
+      btn.addEventListener('click', () => {
+        mcOptions.querySelectorAll('.quiz-mc-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        quizState.selectedMC = btn.dataset.letter;
+        submitBtn.disabled = false;
+      });
+      mcOptions.appendChild(btn);
+    }
+  } else {
+    mcOptions.style.display = 'none';
+    answerInput.style.display = '';
+    answerInput.placeholder = q.type === 'fill' ? 'Fill in the blank...' : 'Type your answer...';
+    answerInput.focus();
+    answerInput.addEventListener('input', function handler() {
+      submitBtn.disabled = !answerInput.value.trim();
+    });
+  }
+}
+
+// ── Quiz Bot: Submit Answer ─────────────────────────────────
+async function submitAnswer() {
+  const q = quizState.questions[quizState.currentIndex];
+  const submitBtn = document.getElementById('quiz-submit-answer');
+  submitBtn.disabled = true;
+
+  let userAnswer = '';
+  let correct = false;
+  let feedbackText = '';
+
+  if (q.type === 'mc') {
+    userAnswer = quizState.selectedMC;
+    correct = userAnswer.toUpperCase() === q.answer.toUpperCase();
+    feedbackText = correct ? 'Correct!' : `The correct answer is ${q.answer}.`;
+    if (q.explanation) feedbackText += ' ' + q.explanation;
+    // Highlight correct/incorrect options
+    document.querySelectorAll('#quiz-mc-options .quiz-mc-btn').forEach(btn => {
+      btn.disabled = true;
+      if (btn.dataset.letter.toUpperCase() === q.answer.toUpperCase()) btn.classList.add('correct');
+      else if (btn.classList.contains('selected')) btn.classList.add('incorrect');
+    });
+  } else if (q.type === 'fill') {
+    userAnswer = document.getElementById('quiz-answer-input').value.trim();
+    const normalize = s => s.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim();
+    correct = normalize(userAnswer).includes(normalize(q.answer)) ||
+              normalize(q.answer).includes(normalize(userAnswer));
+    feedbackText = correct ? 'Correct!' : `The answer is: ${q.answer}.`;
+    if (q.explanation) feedbackText += ' ' + q.explanation;
+  } else {
+    // Open-ended: use Claude to evaluate
+    userAnswer = document.getElementById('quiz-answer-input').value.trim();
+    try {
+      const evalSystem = 'You are an answer evaluator. Compare the student answer to the model answer for accuracy and completeness. Respond ONLY with valid JSON: {"score":0-10,"feedback":"..."}';
+      const evalUser = `Question: ${q.question}\nModel answer: ${q.modelAnswer}\nStudent answer: ${userAnswer}`;
+      const raw = await callClaude(evalSystem, evalUser);
+      const result = parseJsonFromClaude(raw);
+      const score = result.score ?? 0;
+      correct = score >= 7 ? true : score >= 4 ? null : false; // null = partial
+      feedbackText = result.feedback || '';
+      if (q.explanation) feedbackText += '\n\n' + q.explanation;
+    } catch {
+      correct = null;
+      feedbackText = `Could not evaluate. Model answer: ${q.modelAnswer}`;
+    }
+  }
+
+  quizState.results.push({ correct, feedbackText, userAnswer });
+  showFeedback(q, correct, feedbackText);
+}
+
+document.getElementById('quiz-submit-answer').addEventListener('click', submitAnswer);
+
+// ── Quiz Bot: Show Feedback ─────────────────────────────────
+function showFeedback(q, correct, feedbackText) {
+  showQuizSection('quiz-feedback-area');
+
+  document.getElementById('quiz-question-review').textContent = q.question;
+
+  const box = document.getElementById('quiz-feedback-box');
+  box.className = 'quiz-feedback ' + (correct === true ? 'correct' : correct === null ? 'partial' : 'incorrect');
+
+  const badge = document.getElementById('quiz-feedback-badge');
+  badge.textContent = correct === true ? 'Correct!' : correct === null ? 'Partial Credit' : 'Incorrect';
+
+  document.getElementById('quiz-feedback-text').textContent = feedbackText;
+
+  const nextBtn = document.getElementById('quiz-next');
+  nextBtn.textContent = quizState.currentIndex >= quizState.questions.length - 1 ? 'See Results' : 'Next Question';
+}
+
+document.getElementById('quiz-next').addEventListener('click', () => {
+  quizState.currentIndex++;
+  if (quizState.currentIndex >= quizState.questions.length) {
+    showSummary();
+  } else {
+    showQuestion();
+  }
+});
+
+// ── Quiz Bot: Summary ───────────────────────────────────────
+function showSummary() {
+  showQuizSection('quiz-summary');
+  document.getElementById('quiz-header-text').textContent = 'Quiz Results';
+
+  const total = quizState.results.length;
+  const correctCount = quizState.results.filter(r => r.correct === true).length;
+  const partialCount = quizState.results.filter(r => r.correct === null).length;
+  const pct = Math.round((correctCount + partialCount * 0.5) / total * 100);
+
+  const scoreNum = document.getElementById('quiz-score-number');
+  scoreNum.textContent = `${pct}%`;
+  scoreNum.style.color = pct >= 70 ? '#00B894' : pct >= 40 ? '#fdcb6e' : '#e17055';
+
+  document.getElementById('quiz-score-label').textContent =
+    `${correctCount} correct${partialCount ? `, ${partialCount} partial` : ''} out of ${total} questions`;
+
+  const reviewList = document.getElementById('quiz-review-list');
+  reviewList.innerHTML = '';
+  quizState.questions.forEach((q, i) => {
+    const r = quizState.results[i];
+    const div = document.createElement('div');
+    div.className = 'quiz-review-item ' + (r.correct === true ? 'correct' : r.correct === null ? 'partial' : 'incorrect');
+    div.innerHTML = `<div class="quiz-review-q">${i + 1}. ${escapeHtml(q.question)}</div>
+      <div class="quiz-review-a">Your answer: ${escapeHtml(r.userAnswer || '(none)')}</div>`;
+    reviewList.appendChild(div);
+  });
+}
+
+function escapeHtml(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+// Quiz keyboard shortcuts
+document.addEventListener('keydown', e => {
+  const quizVisible = document.getElementById('quiz-modal-backdrop').classList.contains('visible');
+  if (!quizVisible) return;
+
+  if (e.key === 'Escape') { hideQuizModal(); return; }
+
+  const questionArea = document.getElementById('quiz-question-area');
+  const feedbackArea = document.getElementById('quiz-feedback-area');
+
+  if (questionArea.style.display !== 'none') {
+    const q = quizState.questions[quizState.currentIndex];
+    // MC: A-D to select
+    if (q && q.type === 'mc' && /^[a-dA-D]$/.test(e.key)) {
+      const letter = e.key.toUpperCase();
+      document.querySelectorAll('#quiz-mc-options .quiz-mc-btn').forEach(btn => {
+        btn.classList.remove('selected');
+        if (btn.dataset.letter === letter) btn.classList.add('selected');
+      });
+      quizState.selectedMC = letter;
+      document.getElementById('quiz-submit-answer').disabled = false;
+    }
+    // Enter to submit
+    if (e.key === 'Enter' && !e.shiftKey && document.activeElement.tagName !== 'TEXTAREA') {
+      e.preventDefault();
+      const submitBtn = document.getElementById('quiz-submit-answer');
+      if (!submitBtn.disabled) submitBtn.click();
+    }
+  }
+
+  if (feedbackArea.style.display !== 'none' && e.key === 'Enter') {
+    e.preventDefault();
+    document.getElementById('quiz-next').click();
+  }
+});
+
+document.getElementById('quiz-retry').addEventListener('click', () => {
+  hideQuizModal();
+  showQuizConfig();
+});
+document.getElementById('quiz-close-final').addEventListener('click', hideQuizModal);
