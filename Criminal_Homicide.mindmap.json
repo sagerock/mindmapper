@@ -1,0 +1,808 @@
+{
+  "version": 1,
+  "name": "Anatomy of a Crime",
+  "root": {
+    "id": "node_1",
+    "text": "Anatomy of a Crime",
+    "collapsed": false,
+    "children": [
+      {
+        "id": "node_92",
+        "text": "Homicide",
+        "collapsed": true,
+        "children": [
+          {
+            "id": "node_2",
+            "text": "Murder",
+            "collapsed": false,
+            "children": [
+              {
+                "id": "node_67",
+                "text": "Malice Aforethought - Intent to kill. Intent to do GGI. Extreme Recklessness. Intent to commit dangerous Felony",
+                "collapsed": false,
+                "children": [
+                  {
+                    "id": "node_3",
+                    "text": "First Degree",
+                    "collapsed": true,
+                    "children": [
+                      {
+                        "id": "node_4",
+                        "text": "Premeditated",
+                        "collapsed": true,
+                        "children": [
+                          {
+                            "id": "node_26",
+                            "text": "D thought of killing before hand.",
+                            "collapsed": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": "node_23",
+                        "text": "Deliberate",
+                        "collapsed": true,
+                        "children": [
+                          {
+                            "id": "node_24",
+                            "text": "Cool mind capable of reflection",
+                            "collapsed": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": "node_5",
+                        "text": "Felony Murder",
+                        "collapsed": true,
+                        "children": [
+                          {
+                            "id": "node_37",
+                            "text": "Inherently Dangerous",
+                            "collapsed": false,
+                            "children": [
+                              {
+                                "id": "node_51",
+                                "text": "Abstract (Minority)",
+                                "collapsed": false,
+                                "children": [
+                                  {
+                                    "id": "node_53",
+                                    "text": "Could it ever be done without death?",
+                                    "collapsed": false,
+                                    "children": [
+                                      {
+                                        "id": "node_54",
+                                        "text": "If so, it's not inherently dangerous",
+                                        "collapsed": false,
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "node_52",
+                                "text": "Facts-of-the-case (Majority)",
+                                "collapsed": false,
+                                "children": [
+                                  {
+                                    "id": "node_55",
+                                    "text": "Look at how D actually committed the felony",
+                                    "collapsed": false,
+                                    "children": [
+                                      {
+                                        "id": "node_56",
+                                        "text": "If it is inherently dangerous then felony murder applies",
+                                        "collapsed": false,
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "node_38",
+                            "text": "Merger Doctrine (Independant Felony)",
+                            "collapsed": false,
+                            "children": [
+                              {
+                                "id": "node_57",
+                                "text": "Abstract",
+                                "collapsed": false,
+                                "children": [
+                                  {
+                                    "id": "node_59",
+                                    "text": "Can this crime EVER be committed without causing serious bodily harm or death",
+                                    "collapsed": true,
+                                    "children": [
+                                      {
+                                        "id": "node_60",
+                                        "text": "If yes then there is no merger and it can be reun as felony murder.",
+                                        "collapsed": false,
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "node_58",
+                                "text": "Facts-of-the-case",
+                                "collapsed": false,
+                                "children": [
+                                  {
+                                    "id": "node_61",
+                                    "text": "In THIS case, was the felonious conduct independant from the act that caused the death?",
+                                    "collapsed": true,
+                                    "children": [
+                                      {
+                                        "id": "node_62",
+                                        "text": "If it's the same conduct then it's a merger.",
+                                        "collapsed": false,
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "node_39",
+                            "text": "Res Gestae",
+                            "collapsed": false,
+                            "children": []
+                          },
+                          {
+                            "id": "node_40",
+                            "text": "Non-felony killing",
+                            "collapsed": false,
+                            "children": [
+                              {
+                                "id": "node_63",
+                                "text": "Agency Approach (Majority)",
+                                "collapsed": true,
+                                "children": [
+                                  {
+                                    "id": "node_64",
+                                    "text": "It's felony murder only when the killling was done by the felon or co-felon",
+                                    "collapsed": false,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "node_65",
+                                "text": "Proximate Cause Approach (Minority)",
+                                "collapsed": true,
+                                "children": [
+                                  {
+                                    "id": "node_66",
+                                    "text": "Felon is liable for ANY death that was forseeable.",
+                                    "collapsed": false,
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "node_50",
+                            "text": "Common Law",
+                            "collapsed": false,
+                            "children": [
+                              {
+                                "id": "node_28",
+                                "text": "Enumerated Item",
+                                "collapsed": true,
+                                "children": [
+                                  {
+                                    "id": "node_41",
+                                    "text": "Rape",
+                                    "collapsed": false,
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "node_42",
+                                    "text": "Robbery",
+                                    "collapsed": false,
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "node_43",
+                                    "text": "Burglary",
+                                    "collapsed": false,
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "node_44",
+                                    "text": "Arson",
+                                    "collapsed": false,
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "node_6",
+                    "text": "Second Degree",
+                    "collapsed": true,
+                    "children": [
+                      {
+                        "id": "node_7",
+                        "text": "Intent to Kill but not premeditated.",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_8",
+                        "text": "Extreme Recklessness",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_35",
+                        "text": "Felony Murder",
+                        "collapsed": false,
+                        "children": [
+                          {
+                            "id": "node_36",
+                            "text": "Non-enumerated",
+                            "collapsed": true,
+                            "children": [
+                              {
+                                "id": "node_45",
+                                "text": "Not Rape",
+                                "collapsed": false,
+                                "children": []
+                              },
+                              {
+                                "id": "node_46",
+                                "text": "Not Robbery",
+                                "collapsed": false,
+                                "children": []
+                              },
+                              {
+                                "id": "node_47",
+                                "text": "Not Burglary",
+                                "collapsed": false,
+                                "children": []
+                              },
+                              {
+                                "id": "node_48",
+                                "text": "Not Arson",
+                                "collapsed": false,
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node_9",
+            "text": "Manslaughter",
+            "collapsed": false,
+            "children": [
+              {
+                "id": "node_10",
+                "text": "Voluntary Manslaughter",
+                "collapsed": false,
+                "children": [
+                  {
+                    "id": "node_68",
+                    "text": "Common Law",
+                    "collapsed": false,
+                    "children": [
+                      {
+                        "id": "node_11",
+                        "text": "State of Passion",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_33",
+                        "text": "Adequate Provacation - 5 Rigid Categories.",
+                        "collapsed": true,
+                        "children": [
+                          {
+                            "id": "node_29",
+                            "text": "Assault and battery",
+                            "collapsed": false,
+                            "children": []
+                          },
+                          {
+                            "id": "node_30",
+                            "text": "Mutual combat",
+                            "collapsed": false,
+                            "children": []
+                          },
+                          {
+                            "id": "node_31",
+                            "text": "Witness serious crime against close relative",
+                            "collapsed": false,
+                            "children": []
+                          },
+                          {
+                            "id": "node_32",
+                            "text": "Illegal Arrest",
+                            "collapsed": false,
+                            "children": []
+                          },
+                          {
+                            "id": "node_49",
+                            "text": "Witnessing Adultery",
+                            "collapsed": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": "node_73",
+                        "text": "No Cooling Off Period.",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_74",
+                        "text": "Causation",
+                        "collapsed": false,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "node_69",
+                    "text": "Modern Approach",
+                    "collapsed": false,
+                    "children": [
+                      {
+                        "id": "node_75",
+                        "text": "Heat of Passion (Flexible)",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_76",
+                        "text": "Provocation is Reasonable Person Test",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_77",
+                        "text": "No Fixed Categories.",
+                        "collapsed": false,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "node_70",
+                    "text": "Model Penal Code",
+                    "collapsed": false,
+                    "children": [
+                      {
+                        "id": "node_71",
+                        "text": "EMED - Extreme Mental or Emotional Distrubance",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_72",
+                        "text": "No categories. Words OK. Can be accumalative and slow building. From the actor's viewpoint. Partially subjective.",
+                        "collapsed": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "node_13",
+                "text": "Involuntary Manslaughter",
+                "collapsed": false,
+                "children": [
+                  {
+                    "id": "node_14",
+                    "text": "Criminal Negligence. Not extreme enough for murder",
+                    "collapsed": false,
+                    "children": []
+                  },
+                  {
+                    "id": "node_15",
+                    "text": "Misdemeanor Manslaughter",
+                    "collapsed": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "node_93",
+        "text": "Theories of Punishment",
+        "collapsed": true,
+        "children": [
+          {
+            "id": "node_94",
+            "text": "Utilitarian",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_96",
+                "text": "General Deterance",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_97",
+                "text": "Specific Deterance",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_98",
+                "text": "Incapacitation",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_99",
+                "text": "Rehabilitation",
+                "collapsed": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_95",
+            "text": "Retributive",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_100",
+                "text": "Assaultive Retribution",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_101",
+                "text": "Protective Retribution",
+                "collapsed": false,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "node_103",
+        "text": "Actus Reus",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_104",
+            "text": "Willed Muscular Contraction",
+            "collapsed": false,
+            "children": []
+          },
+          {
+            "id": "node_105",
+            "text": "Omissions (Failure to Act) There is no duty to prevent harm",
+            "collapsed": false,
+            "children": [
+              {
+                "id": "node_106",
+                "text": "5 Exceptions",
+                "collapsed": false,
+                "children": [
+                  {
+                    "id": "node_107",
+                    "text": "Statute",
+                    "collapsed": false,
+                    "children": []
+                  },
+                  {
+                    "id": "node_108",
+                    "text": "Status Relationship",
+                    "collapsed": false,
+                    "children": []
+                  },
+                  {
+                    "id": "node_109",
+                    "text": "Contractual duty",
+                    "collapsed": false,
+                    "children": []
+                  },
+                  {
+                    "id": "node_110",
+                    "text": "Voluntary assumption of care",
+                    "collapsed": false,
+                    "children": []
+                  },
+                  {
+                    "id": "node_111",
+                    "text": "Creation of Risk",
+                    "collapsed": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node_112",
+            "text": "Causation",
+            "collapsed": false,
+            "children": [
+              {
+                "id": "node_113",
+                "text": "\"But For\" Test",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_114",
+                    "text": "Multiple Actual Causes",
+                    "collapsed": false,
+                    "children": [
+                      {
+                        "id": "node_115",
+                        "text": "Accelerating a Result",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_116",
+                        "text": "Concurrent Sufficient Causes",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_117",
+                        "text": "Obstructed Cause",
+                        "collapsed": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "node_118",
+                "text": "Proximate Cause - was it foreseeable?",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_119",
+                    "text": "Intervening Cause Analysis",
+                    "collapsed": false,
+                    "children": [
+                      {
+                        "id": "node_120",
+                        "text": "Responsive intervening Causes. D is still liable",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_121",
+                        "text": "Coincidental - may break the chain",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_122",
+                        "text": "De Minimus Contribution - D's role was trivial",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_123",
+                        "text": "Intended consequences doctirine - D is still liable even though the chain was unexpected.",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_124",
+                        "text": "Apparent Safety Doctrine",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_125",
+                        "text": "Free, deliberate, informaed human intervention - 3rd party's voluntary choice breaks the chain.",
+                        "collapsed": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "node_126",
+        "text": "Mens Rea - Guilty Mind",
+        "collapsed": true,
+        "children": [
+          {
+            "id": "node_127",
+            "text": "Common Law",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_129",
+                "text": "Intentionally",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_130",
+                "text": "Knowingly",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_131",
+                "text": "Willingly",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_132",
+                "text": "Recklessly",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_133",
+                "text": "Negligently",
+                "collapsed": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_128",
+            "text": "Model Penal Code",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_134",
+                "text": "Purposefully",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_135",
+                "text": "Knowingly",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_136",
+                "text": "Recklessly",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_137",
+                "text": "Negligently",
+                "collapsed": false,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "node_19",
+        "text": "Defenses",
+        "collapsed": true,
+        "children": [
+          {
+            "id": "node_22",
+            "text": "Mistake of Fact",
+            "collapsed": false,
+            "children": [
+              {
+                "id": "node_78",
+                "text": "Specific Intent - even unreasonable but honest mistakes are a defense.",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_81",
+                    "text": "D meant to do the act plus something else",
+                    "collapsed": false,
+                    "children": [
+                      {
+                        "id": "node_82",
+                        "text": "Posession of Marijuana with the intent to sell",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_83",
+                        "text": "Larceny - Intent to steall with with the intent to permanently deprive the owner.",
+                        "collapsed": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "node_79",
+                "text": "General Intent - Reasonable Mistakes are a defense.",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_80",
+                    "text": "D meant to do the act",
+                    "collapsed": false,
+                    "children": [
+                      {
+                        "id": "node_84",
+                        "text": "Rape",
+                        "collapsed": false,
+                        "children": []
+                      },
+                      {
+                        "id": "node_85",
+                        "text": "New Node",
+                        "collapsed": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node_87",
+            "text": "Mistake of Law",
+            "collapsed": false,
+            "children": [
+              {
+                "id": "node_88",
+                "text": "Reasonable Reliance",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_89",
+                "text": "Fair Notice",
+                "collapsed": false,
+                "children": []
+              },
+              {
+                "id": "node_90",
+                "text": "Failure of Proof",
+                "collapsed": false,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

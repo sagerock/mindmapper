@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind Map Editor</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; overflow: hidden; background: #1a1a2e; color: #fff; }
+
+  #toolbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; gap: 6px;
+    padding: 8px 12px;
+    background: #16213e; border-bottom: 1px solid #0f3460;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  #toolbar button {
+    padding: 6px 14px; border: none; border-radius: 4px;
+    background: #0f3460; color: #e0e0e0; font-size: 13px;
+    cursor: pointer; transition: background 0.15s;
+  }
+  #toolbar button:hover { background: #1a5276; }
+  #toolbar .sep { width: 1px; height: 24px; background: #0f3460; margin: 0 4px; }
+  #toolbar .title { font-weight: 600; font-size: 14px; margin-right: 12px; color: #a29bfe; }
+
+  #file-input { display: none; }
+
+  svg { display: block; width: 100vw; height: 100vh; cursor: grab; }
+  svg.panning { cursor: grabbing; }
+
+  .edge { fill: none; stroke: #4a4a6a; stroke-width: 2; }
+
+  .node-rect { rx: 8; ry: 8; cursor: pointer; stroke: transparent; stroke-width: 3; transition: stroke 0.1s; }
+  .node-rect.selected { stroke: #ffd700; filter: drop-shadow(0 0 6px rgba(255,215,0,0.5)); }
+  .node-rect.drop-target { stroke: #00ff88; stroke-width: 3; filter: drop-shadow(0 0 8px rgba(0,255,136,0.6)); }
+
+  .drag-ghost {
+    opacity: 0.6; pointer-events: none; position: fixed; z-index: 150;
+    padding: 6px 14px; border-radius: 8px; color: #fff; font-size: 13px;
+    font-family: inherit; white-space: nowrap;
+  }
+
+  .node-text { fill: #fff; font-size: 13px; font-family: inherit; pointer-events: none; user-select: none; }
+
+  .collapse-circle { cursor: pointer; fill: #2d2d44; stroke: #888; stroke-width: 1.5; }
+  .collapse-text { fill: #ccc; font-size: 12px; font-family: inherit; pointer-events: none; user-select: none; }
+
+  #rename-input {
+    position: fixed; z-index: 200; display: none;
+    padding: 6px 10px; border: 2px solid #ffd700; border-radius: 4px;
+    background: #1a1a2e; color: #fff; font-size: 13px; font-family: inherit;
+    outline: none; min-width: 80px; resize: none; overflow: hidden;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+
+<div id="toolbar">
+  <span class="title">MindMapper</span>
+  <button id="btn-new">New</button>
+  <button id="btn-save">Save</button>
+  <button id="btn-load">Load</button>
+  <input type="file" id="file-input" accept=".json,.mindmap.json">
+  <div class="sep"></div>
+  <button id="btn-add-child">Add Child</button>
+  <button id="btn-add-sibling">Add Sibling</button>
+  <button id="btn-delete">Delete</button>
+  <div class="sep"></div>
+  <button id="btn-move-up">Move Up</button>
+  <button id="btn-move-down">Move Down</button>
+  <div class="sep"></div>
+  <button id="btn-fit">Fit View</button>
+</div>
+
+<svg id="canvas">
+  <g id="viewport"></g>
+</svg>
+
+<textarea id="rename-input" rows="1"></textarea>
+
+<script src="mindmapper.js"></script>
+</body>
+</html>
