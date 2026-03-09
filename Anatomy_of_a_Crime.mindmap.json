@@ -103,164 +103,192 @@
                         "collapsed": false,
                         "children": [
                           {
-                            "id": "node_37",
-                            "text": "Inherently Dangerous",
-                            "collapsed": true,
-                            "children": [
-                              {
-                                "id": "node_51",
-                                "text": "Abstract (Minority)",
-                                "collapsed": false,
-                                "children": [
-                                  {
-                                    "id": "node_53",
-                                    "text": "Could it ever be done without death?",
-                                    "collapsed": false,
-                                    "children": [
-                                      {
-                                        "id": "node_54",
-                                        "text": "If so, it's not inherently dangerous",
-                                        "collapsed": false,
-                                        "children": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "id": "node_52",
-                                "text": "Facts-of-the-case (Majority)",
-                                "collapsed": false,
-                                "children": [
-                                  {
-                                    "id": "node_55",
-                                    "text": "Look at how D actually committed the felony",
-                                    "collapsed": false,
-                                    "children": [
-                                      {
-                                        "id": "node_56",
-                                        "text": "If it is inherently dangerous then felony murder applies",
-                                        "collapsed": false,
-                                        "children": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "id": "node_28",
-                            "text": "Enumerated Item - making it first degree Murder",
-                            "collapsed": true,
-                            "children": [
-                              {
-                                "id": "node_41",
-                                "text": "Rape",
-                                "collapsed": false,
-                                "children": []
-                              },
-                              {
-                                "id": "node_42",
-                                "text": "Robbery",
-                                "collapsed": false,
-                                "children": []
-                              },
-                              {
-                                "id": "node_43",
-                                "text": "Burglary",
-                                "collapsed": false,
-                                "children": []
-                              },
-                              {
-                                "id": "node_44",
-                                "text": "Arson",
-                                "collapsed": false,
-                                "children": []
-                              }
-                            ]
-                          },
-                          {
-                            "id": "node_38",
-                            "text": "Merger Doctrine (Independant Felony)",
-                            "collapsed": true,
-                            "children": [
-                              {
-                                "id": "node_57",
-                                "text": "Abstract",
-                                "collapsed": false,
-                                "children": [
-                                  {
-                                    "id": "node_59",
-                                    "text": "Can this crime EVER be committed without causing serious bodily harm or death",
-                                    "collapsed": true,
-                                    "children": [
-                                      {
-                                        "id": "node_60",
-                                        "text": "If yes then there is no merger and it can be reun as felony murder.",
-                                        "collapsed": false,
-                                        "children": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "id": "node_58",
-                                "text": "Facts-of-the-case",
-                                "collapsed": false,
-                                "children": [
-                                  {
-                                    "id": "node_61",
-                                    "text": "In THIS case, was the felonious conduct independant from the act that caused the death?",
-                                    "collapsed": true,
-                                    "children": [
-                                      {
-                                        "id": "node_62",
-                                        "text": "If it's the same conduct then it's a merger.",
-                                        "collapsed": false,
-                                        "children": []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "id": "node_39",
-                            "text": "Res Gestae",
+                            "id": "node_144",
+                            "text": "Felony Murder Checklist",
                             "collapsed": false,
-                            "children": []
-                          },
-                          {
-                            "id": "node_40",
-                            "text": "Non-felony killing",
-                            "collapsed": true,
                             "children": [
                               {
-                                "id": "node_63",
-                                "text": "Agency Approach (Majority)",
-                                "collapsed": true,
+                                "id": "node_145",
+                                "text": "1. Did someone die during the commission or attempted commission of a felony? If yes Run through the Limitations. If no, Analyze under standard Homocide",
+                                "collapsed": false,
                                 "children": [
                                   {
-                                    "id": "node_64",
-                                    "text": "It's felony murder only when the killling was done by the felon or co-felon",
+                                    "id": "node_146",
+                                    "text": "Limitations",
                                     "collapsed": false,
-                                    "children": []
-                                  }
-                                ]
-                              },
-                              {
-                                "id": "node_65",
-                                "text": "Proximate Cause Approach (Minority)",
-                                "collapsed": true,
-                                "children": [
-                                  {
-                                    "id": "node_66",
-                                    "text": "Felon is liable for ANY death that was forseeable.",
-                                    "collapsed": false,
-                                    "children": []
+                                    "children": [
+                                      {
+                                        "id": "node_28",
+                                        "text": "4 Enumerated Item - making it first degree Murder",
+                                        "collapsed": true,
+                                        "children": [
+                                          {
+                                            "id": "node_41",
+                                            "text": "Rape",
+                                            "collapsed": false,
+                                            "children": []
+                                          },
+                                          {
+                                            "id": "node_42",
+                                            "text": "Robbery",
+                                            "collapsed": false,
+                                            "children": []
+                                          },
+                                          {
+                                            "id": "node_43",
+                                            "text": "Burglary",
+                                            "collapsed": false,
+                                            "children": []
+                                          },
+                                          {
+                                            "id": "node_44",
+                                            "text": "Arson",
+                                            "collapsed": false,
+                                            "children": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "node_37",
+                                        "text": "Inherently Dangerous (Abstract and Facts)",
+                                        "collapsed": true,
+                                        "children": [
+                                          {
+                                            "id": "node_51",
+                                            "text": "Abstract (Minority)",
+                                            "collapsed": false,
+                                            "children": [
+                                              {
+                                                "id": "node_53",
+                                                "text": "Could it ever be done without death?",
+                                                "collapsed": false,
+                                                "children": [
+                                                  {
+                                                    "id": "node_54",
+                                                    "text": "If so, it's not inherently dangerous. Favors Defendant.",
+                                                    "collapsed": false,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "node_52",
+                                            "text": "Facts-of-the-case (Majority)",
+                                            "collapsed": false,
+                                            "children": [
+                                              {
+                                                "id": "node_55",
+                                                "text": "Look at how D actually committed the felony",
+                                                "collapsed": false,
+                                                "children": [
+                                                  {
+                                                    "id": "node_56",
+                                                    "text": "If it is inherently dangerous then felony murder applies",
+                                                    "collapsed": false,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "node_38",
+                                        "text": "Merger Doctrine (Independant Felony) (Abstract and Facts)",
+                                        "collapsed": true,
+                                        "children": [
+                                          {
+                                            "id": "node_57",
+                                            "text": "Abstract",
+                                            "collapsed": false,
+                                            "children": [
+                                              {
+                                                "id": "node_59",
+                                                "text": "Can this crime EVER be committed without causing serious bodily harm or death",
+                                                "collapsed": false,
+                                                "children": [
+                                                  {
+                                                    "id": "node_60",
+                                                    "text": "If yes then there is no merger and it can be reun as felony murder. Favors Prosecutor",
+                                                    "collapsed": false,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "node_58",
+                                            "text": "Facts-of-the-case",
+                                            "collapsed": false,
+                                            "children": [
+                                              {
+                                                "id": "node_61",
+                                                "text": "In THIS case, was the felonious conduct independant from the act that caused the death?",
+                                                "collapsed": true,
+                                                "children": [
+                                                  {
+                                                    "id": "node_62",
+                                                    "text": "If it's the same conduct then it's a merger.",
+                                                    "collapsed": false,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "node_39",
+                                        "text": "Res Gestae",
+                                        "collapsed": true,
+                                        "children": [
+                                          {
+                                            "id": "node_147",
+                                            "text": "Was the killing within time, distance and causal boundaries.",
+                                            "collapsed": false,
+                                            "children": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "node_40",
+                                        "text": "Non-felony killing",
+                                        "collapsed": true,
+                                        "children": [
+                                          {
+                                            "id": "node_63",
+                                            "text": "Agency Approach (Majority)",
+                                            "collapsed": true,
+                                            "children": [
+                                              {
+                                                "id": "node_64",
+                                                "text": "It's felony murder only when the killling was done by the felon or co-felon",
+                                                "collapsed": false,
+                                                "children": []
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "node_65",
+                                            "text": "Proximate Cause Approach (Minority)",
+                                            "collapsed": true,
+                                            "children": [
+                                              {
+                                                "id": "node_66",
+                                                "text": "Felon is liable for ANY death that was forseeable.",
+                                                "collapsed": false,
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
                                   }
                                 ]
                               }
@@ -277,7 +305,7 @@
           {
             "id": "node_9",
             "text": "Manslaughter",
-            "collapsed": false,
+            "collapsed": true,
             "children": [
               {
                 "id": "node_10",
@@ -621,7 +649,7 @@
       {
         "id": "node_126",
         "text": "Mens Rea - Guilty Mind",
-        "collapsed": true,
+        "collapsed": false,
         "children": [
           {
             "id": "node_127",
@@ -696,7 +724,7 @@
       {
         "id": "node_19",
         "text": "Defenses",
-        "collapsed": true,
+        "collapsed": false,
         "children": [
           {
             "id": "node_22",
@@ -766,7 +794,7 @@
           {
             "id": "node_87",
             "text": "Mistake of Law",
-            "collapsed": false,
+            "collapsed": true,
             "children": [
               {
                 "id": "node_88",
