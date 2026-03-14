@@ -144,6 +144,12 @@
                     "text": "Reis Robotics USA v. Concept Industries: Motion to strike insufficient 'affirmative defenses.' Issues: (1) defenses that are really denials (not affirmative defenses), (2) vague laundry-list defenses ('laches, waiver, estoppel...') too general, (3) 'reserving right to add defenses' not allowed - must plead now or waive",
                     "collapsed": true,
                     "children": []
+                  },
+                  {
+                    "id": "node_297",
+                    "text": "Distinguishing Denials from Affirmative Defenses \u2014 'Never went on property' = denial (contradicts plaintiff's allegation). 'Had permission' = affirmative defense (admits entry, asserts additional fact defeating liability). 'Adverse possession' = affirmative defense. 'Neighbor was negligent' = counterclaim. Key test: if defendant bears burden of proof \u2192 affirmative defense",
+                    "collapsed": true,
+                    "children": []
                   }
                 ]
               },
@@ -311,6 +317,25 @@
             "id": "node_43",
             "text": "Policy Implications: Favors defendants (dismiss before expensive discovery, info asymmetry). Disadvantages plaintiffs (Catch-22: need facts to plead but facts in defendant's control, only obtainable through discovery)",
             "collapsed": true,
+            "children": [
+              {
+                "id": "node_291",
+                "text": "Catch-22 Problem \u2014 Plaintiffs need discovery to plead plausibly, but can't get discovery until they survive motion to dismiss. Information asymmetry favors defendants who control the facts. Discovery doesn't begin until after 12(b)(6) is resolved",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_289",
+            "text": "Ohio vs. Federal Distinction \u2014 Ohio state courts still use notice pleading (short and plain statement, give fair notice). Federal courts use Twombly-Iqbal plausibility pleading. Key exam distinction: same complaint may survive in Ohio but fail in federal court",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_290",
+            "text": "Exam Strategy: Two-Layer Analysis \u2014 Layer 1: Apply strict Twombly-Iqbal two-step (strip conclusory allegations, assess plausibility). Layer 2: Acknowledge Swanson's softening ('could this have happened?' not 'did it happen?'). Argue both ways to show doctrinal sophistication",
+            "collapsed": true,
             "children": []
           }
         ]
@@ -399,6 +424,36 @@
                 "children": []
               }
             ]
+          },
+          {
+            "id": "node_292",
+            "text": "Szabo Food Service \u2014 Amount of pre-filing investigation depends on (1) time available and (2) probability more investigation will turn up important evidence. Rule 11 does NOT require steps that are not cost-justified. Cost-benefit analysis for investigation",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_293",
+            "text": "National Objective Standard \u2014 No locality rule (unlike medical malpractice). If you lack expertise, must either associate with a specialist OR 'bone up on the relevant law at every step' and 'litigate very carefully, just as a new driver must drive very carefully'",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_294",
+            "text": "En Banc Review as Pathway \u2014 Arguing against controlling circuit precedent is non-frivolous because en banc review exists as a legitimate mechanism for changing circuit law. Normal process: 3-judge panel \u2192 en banc (all judges) \u2192 Supreme Court. Only full court can overrule its own precedent",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_295",
+            "text": "Sources for 'Nonfrivolous Argument for Change' under 11(b)(2) \u2014 Circuit splits, Supreme Court dicta, dissenting opinions, law review articles, scholarly commentary, trends in other jurisdictions. Losing does NOT equal frivolous; argument needs legitimate basis, not ultimate success",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_296",
+            "text": "Connection to Ohio Professional Conduct Rules \u2014 Rule 1.1 (Competence: legal knowledge, skill, thoroughness reasonably necessary), Rule 1.2 (Diligence: reasonable diligence and promptness), Rule 3.1 (Meritorious Claims: no frivolous claims, but good faith argument for change allowed). Parallel Rule 11 obligations; violation of Rule 11 may also be professional responsibility violation",
+            "collapsed": true,
+            "children": []
           },
           {
             "id": "node_55",
@@ -891,6 +946,18 @@
                     "text": "Rule 26(a)(3) - Pretrial Disclosures: Due at least 30 days before trial. Must disclose witness lists and exhibit lists. Additions/changes due by time pretrial disclosures are due",
                     "collapsed": true,
                     "children": []
+                  },
+                  {
+                    "id": "node_303",
+                    "text": "Scope Narrower than General Discovery \u2014 Only what disclosing party may use to support its OWN claims/defenses. NOT required to disclose witnesses whose testimony damages your own case. NOT impeachment-only witnesses. Defendant need only disclose witnesses/documents for its defenses \u2014 far smaller universe than what plaintiff might want",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_304",
+                    "text": "Mechanisms to Delay/Avoid Disclosures \u2014 Three options: (1) Stipulation with opposing party (Rule 26(a)(1)(C)), (2) Object during 26(f) conference and state objection in proposed discovery plan, (3) Move for court order postponing disclosure. Self-help non-disclosure is NOT authorized",
+                    "collapsed": true,
+                    "children": []
                   }
                 ]
               },
@@ -914,6 +981,24 @@
                   {
                     "id": "node_267",
                     "text": "Rule 33(c) - Use at Trial: Interrogatory answers usable at trial to the extent allowed by the Federal Rules of Evidence",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_300",
+                    "text": "Contention Interrogatory vs. Pure Legal Conclusion \u2014 Pure legal conclusion ('Is assumption of risk a defense in Ohio?') = objectionable (seeks legal essay unrelated to case facts). Contention interrogatory ('Do you contend plaintiff assumed the risk?') = permitted, asks how law applies to facts, but court may defer answer until after other discovery is complete",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_301",
+                    "text": "Boilerplate/General Objections Disfavored \u2014 Increasingly disfavored by courts; may be stricken or sanctioned. Must state specific objections with particularity. Unstated grounds may be waived",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_302",
+                    "text": "'Continuing Interrogatories' Preamble Invalid \u2014 Cannot impose supplementation obligations beyond what Rule 26(e) requires through instructions in interrogatories. Duty to supplement exists only under Rule 26(e) when response becomes materially incomplete or incorrect",
                     "collapsed": true,
                     "children": []
                   }
@@ -1006,6 +1091,12 @@
                   {
                     "id": "node_273",
                     "text": "Rule 32(d)(3) - Deposition Objection Waiver: (A) Substantive/competency objections (relevance, etc.) preserved until trial - NOT waived. (B) Form objections (compound, ambiguous, leading) MUST be made at deposition or permanently waived",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_305",
+                    "text": "Privilege at Depositions \u2014 Answering after privilege objection effectively waives the privilege. Counsel may instruct not to answer ONLY for: (1) privilege, (2) to enforce court limitation, or (3) to present Rule 30(d)(3) motion to terminate. Discovering party must file motion to compel if it wants an answer after privilege instruction",
                     "collapsed": true,
                     "children": []
                   }
@@ -1134,6 +1225,18 @@
                 "text": "Rule 26(b)(4)(A) - Deposition of Testifying Experts: May depose any identified testifying expert, but if report is required, deposition may occur ONLY after the report is provided",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_298",
+                "text": "'Consulted but Not Retained' Expert \u2014 Rule is silent on this category. Advisory Committee says omission is intentional (protected from discovery). Alternative reading: rule only identifies protected experts, leaving consulted-but-unretained vulnerable to discovery. Strategic concern: rejected experts may have unfavorable opinions, making them attractive targets ('free ride' problem vs. making experts 'attractive targets')",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_299",
+                "text": "De Bene Esse vs. Discovery Deposition \u2014 Discovery deposition: open-ended questioning for preview/impeachment, witness expected to testify live at trial. De bene esse deposition: substitute for live testimony when witness will be unavailable (e.g., illness, distance), more guarded questioning because it IS the trial testimony",
+                "collapsed": true,
+                "children": []
               }
             ]
           },
@@ -1241,7 +1344,14 @@
             "id": "node_143",
             "text": "Strategic Sequencing: Initial disclosures \u2192 Interrogatories (identify/locate) \u2192 Document requests (collect evidence) \u2192 Depositions (armed with documents, key witnesses last) \u2192 Requests for admissions (narrow issues)",
             "collapsed": true,
-            "children": []
+            "children": [
+              {
+                "id": "node_306",
+                "text": "Zweifach Detailed Discovery Sequence \u2014 (1) Required disclosures, (2) Depose secondary witnesses, (3) Initial document requests, (4) Interrogatories to identify witnesses/facts, (5) Depose adverse party, (6) Follow-up requests to admit, (7) Depose expert witnesses, (8) Contention interrogatories, (9) Final 'clean up' discovery requests",
+                "collapsed": true,
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -1338,6 +1448,19 @@
               {
                 "id": "node_149",
                 "text": "Two-Dismissal Rule - 41(a)(1)(B): First dismissal = without prejudice. Second dismissal of SAME claim = on the merits, cannot refile",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_317",
+                    "text": "Two-Dismissal Rule Specifics \u2014 First notice dismissal = without prejudice, can refile. Only second dismissal of same claim BY NOTICE or STIPULATION (not court order) triggers 'on the merits' bar. Court-ordered dismissal under 41(a)(2) does NOT count toward the two-dismissal rule",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "node_318",
+                "text": "Defendant Can Block Voluntary Dismissal by Court Order \u2014 Under 41(a)(2), if defendant has counterclaim that cannot independently proceed without the plaintiff's case, defendant can effectively block plaintiff's voluntary dismissal by objecting. Court cannot force dismissal over defendant's counterclaim objection unless counterclaim can proceed independently",
                 "collapsed": true,
                 "children": []
               }
@@ -1456,6 +1579,18 @@
                 "text": "Rule 56(h) - Bad Faith Affidavits: If affidavit submitted in bad faith or solely for delay, court may order payment of reasonable expenses (including attorney's fees) or impose sanctions including contempt of court",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_311",
+                "text": "Anderson v. Liberty Lobby \u2014 'Material' facts determined by substantive law; only disputes affecting outcome under governing law are material. Distinguish 'material fact' (identified by substantive law elements) from 'genuine dispute' (sufficient evidence for rational factfinder to find for non-movant)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_312",
+                "text": "Burden of Production vs. Burden of Persuasion \u2014 At SJ, court asks about burden of production (is there enough evidence for a rational factfinder to find for non-movant?), NOT burden of persuasion (which side's evidence is more convincing). Court does not weigh evidence or assess credibility \u2014 that is for trial",
+                "collapsed": true,
+                "children": []
               }
             ]
           }
@@ -1471,6 +1606,12 @@
             "text": "Seventh Amendment - Right to Jury Trial",
             "collapsed": true,
             "children": [
+              {
+                "id": "node_307",
+                "text": "Two Clauses \u2014 (1) Right to Jury Trial Clause: preserves jury right for 'suits at common law' where value in controversy exceeds $20. (2) Reexamination Clause: no fact tried by a jury shall be otherwise reexamined in any court except according to rules of the common law",
+                "collapsed": true,
+                "children": []
+              },
               {
                 "id": "node_163",
                 "text": "Preserves right as existed in English courts in 1791. Only 'suits at common law' (not equity/admiralty). Federal courts only. Waivable - must request",
@@ -1492,6 +1633,24 @@
               {
                 "id": "node_232",
                 "text": "Rule 38(a): Preserves right to jury trial as declared by 7th Amendment. Rule 2 merged law/equity but 38(a) ensures merger expanded (not contracted) jury rights. Connection to Dairy Queen - labels don't override constitutional right",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_308",
+                "text": "Common Law vs. Equity Historical Categories \u2014 Law (jury): Assumpsit, Trespass, Ejectment, Trover, Mandamus, Habeas Corpus. Equity (judge): Injunctions, Specific Performance, Accounting, Class Actions, Interpleader. Key test: sought money damages = law = jury right; no adequate legal remedy = equity = judge decides",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_309",
+                "text": "Dairy Queen \u2014 'Incidental legal issues' argument rejected. Cannot characterize legal claims as merely incidental to equitable claims to avoid jury trial. Labels don't control. A contract debt claim is 'undeniably legal' regardless of how pleaded. Rule 2 merged law/equity but Rule 38(a) preserves jury right. Legal claims go to jury first; judge bound by jury findings on common issues",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_310",
+                "text": "7th Amendment NOT Incorporated to States through 14th Amendment \u2014 Applies only in federal courts. States have their own jury trial provisions and constitutional guarantees. Does not apply to criminal cases (covered by 6th Amendment)",
                 "collapsed": true,
                 "children": []
               }
@@ -1525,6 +1684,12 @@
                 "text": "Pennsylvania RR v. Chamberlain: Witness testimony deemed 'incredible' and 'unbelievable.' Positive, uncontradicted testimony of opposing witnesses controlled. Principle: incredible testimony alone cannot create a genuine factual dispute sufficient to defeat JMOL",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_313",
+                "text": "Multiple Rule 50(a) Motions Permitted \u2014 Can move after plaintiff rests, after defendant rests, and at other points before case goes to jury. Each motion preserves those specific issues for Rule 50(b) renewed JMOL after verdict",
+                "collapsed": true,
+                "children": []
               }
             ]
           },
@@ -1548,6 +1713,12 @@
               {
                 "id": "node_173",
                 "text": "Why 50(a) required first: Gives opposing party chance to cure, respects 7th Amendment Reexamination Clause, prevents sandbagging. Cannot appeal denial of 50(a) without filing 50(b)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_314",
+                "text": "Rule 50(b) on Appeal \u2014 If RJMOL is granted on appeal, appellate court can reinstate the jury verdict rather than ordering a new trial. Cannot appeal denial of 50(a) without first filing 50(b). Standard of review on appeal: de novo (same as Summary Judgment)",
                 "collapsed": true,
                 "children": []
               }
@@ -1662,7 +1833,14 @@
                 "id": "node_190",
                 "text": "Interlocutory Appeals - 28 U.S.C. \u00a7 1292: Orders involving injunctions, Collateral Order Doctrine, Permissive Interlocutory Appeal",
                 "collapsed": true,
-                "children": []
+                "children": [
+                  {
+                    "id": "node_319",
+                    "text": "Collateral Order Doctrine Elements (Cohen v. Beneficial Industrial Loan Corp.) \u2014 Must be: (1) conclusive (fully resolves the disputed question), (2) resolves important question completely separate from merits of the action, (3) effectively unreviewable on appeal from final judgment (right would be lost if forced to wait). Narrow exception to final judgment rule",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
               },
               {
                 "id": "node_191",
@@ -1791,6 +1969,18 @@
               {
                 "id": "node_211",
                 "text": "Effect: Bars re-litigation of the specific ISSUE only, not entire claims",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_315",
+                "text": "Non-Mutual Defensive vs. Offensive Collateral Estoppel \u2014 Defensive: new defendant uses prior plaintiff's loss against same plaintiff (generally allowed \u2014 plaintiff had full opportunity to litigate). Offensive: new plaintiff uses prior defendant's loss (discretionary, court weighs fairness \u2014 could encourage wait-and-see). Key distinction for exam",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_316",
+                "text": "'Actually Litigated' Requirement \u2014 Default judgments and consent judgments (settlements) do NOT satisfy 'actually litigated' requirement. Only claim preclusion (not issue preclusion) can arise from defaults/settlements, because the issues were never genuinely contested and decided",
                 "collapsed": true,
                 "children": []
               }
