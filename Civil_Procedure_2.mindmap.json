@@ -132,6 +132,12 @@
                     "text": "13(b) Permissive: MAY assert - any claim not from same transaction/occurrence; can bring later",
                     "collapsed": true,
                     "children": []
+                  },
+                  {
+                    "id": "node_212",
+                    "text": "13(c) Relief: Counterclaim relief can exceed or differ from plaintiff's requested relief",
+                    "collapsed": true,
+                    "children": []
                   }
                 ]
               },
@@ -347,7 +353,26 @@
                 "id": "node_56",
                 "text": "Who: Attorneys, law firms, parties. CANNOT impose monetary sanctions on represented party for 11(b)(2) legal basis violations",
                 "collapsed": true,
-                "children": []
+                "children": [
+                  {
+                    "id": "node_214",
+                    "text": "11(c)(1): Can sanction anyone who 'presents' a document (signing, filing, submitting, advocating). Law firms jointly responsible absent exceptional circumstances",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_215",
+                    "text": "11(c)(4) Types of Sanctions: Nonmonetary directives (reprimand, CLE), penalty paid to court, attorney's fees to movant (only if motion-based, not sua sponte). Must be 'sufficient to deter' - no more",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_216",
+                    "text": "11(c)(5): Cannot impose monetary sanctions on represented party for 11(b)(2) violations (bad legal arguments = lawyer's responsibility only). Sanctions focused on deterrence, not compensation",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
               },
               {
                 "id": "node_57",
@@ -503,6 +528,12 @@
                 "text": "NEVER Waived - Rule 12(h)(3): 12(b)(1) subject matter jurisdiction - can be raised at ANY time, even on appeal",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_213",
+                "text": "Hunter v. Serv-Tech, Inc.: Defendant filed 12(b)(5) motion, then tried to raise 12(b)(2) later. Court held 12(b)(2) waived by not including in first motion under 12(g)(2). Expressly 'reserving rights' in motion does NOT prevent waiver",
+                "collapsed": true,
+                "children": []
               }
             ]
           }
@@ -579,7 +610,14 @@
                 "id": "node_93",
                 "text": "15(c)(1)(A): Applicable law allows relation back",
                 "collapsed": true,
-                "children": []
+                "children": [
+                  {
+                    "id": "node_217",
+                    "text": "State law may be more generous than federal relation-back rules. Court applies whichever law (state or federal) provides relation back - acts as a one-way ratchet favoring the amending party",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
               },
               {
                 "id": "node_94",
@@ -730,7 +768,26 @@
                 "id": "node_117",
                 "text": "Mandatory Initial Disclosures - Rule 26(a)(1): Automatic exchange within 14 days after 26(f) conference. Witnesses, documents/ESI, damages computation, insurance agreements. Narrower scope: only what disclosing party may use to support its claims/defenses",
                 "collapsed": true,
-                "children": []
+                "children": [
+                  {
+                    "id": "node_218",
+                    "text": "Rule 26(f) - Discovery Conference ('Meet and Confer'): Required at least 21 days before Rule 16(b) scheduling conference. Parties create discovery plan addressing topics in 26(f)(2)-(3). Triggers initial disclosures",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_219",
+                    "text": "Rule 26(d) - Timing/Sequence: Discovery generally begins AFTER the 26(f) conference unless otherwise authorized by rule, stipulation, or court order",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_220",
+                    "text": "Rule 26(a)(3) - Pretrial Disclosures: Due at least 30 days before trial. Must disclose witness lists and exhibit lists. Additions/changes due by time pretrial disclosures are due",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
               },
               {
                 "id": "node_118",
@@ -765,6 +822,36 @@
                   {
                     "id": "node_123",
                     "text": "Using at Trial - Rule 32: Layer 1 (Rule 32(a) - proper deposition?) then Layer 2 (FRE - admissible testimony?)",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_221",
+                    "text": "30(a) When Depositions May Be Taken: Without leave for any person. Leave required if: >10 depositions/side, deponent already deposed, before 26(d) time, deponent in prison",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_222",
+                    "text": "30(b) Notice: Reasonable written notice to every party (time, place, deponent). Subpoena duces tecum materials listed. Must state recording method. 30(b)(6): organizational depositions - name entity, describe matters, entity designates witness",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_223",
+                    "text": "30(c) Examination/Objections: Proceeds as at trial under FRE. Objections noted on record, exam continues. Instruction not to answer ONLY to: preserve privilege, enforce court limitation, or present 30(d)(3) motion",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_224",
+                    "text": "30(d)(1): Objections must be concise, non-argumentative, and non-suggestive. 30(d)(3): Motion to terminate or limit on grounds of bad faith, annoyance, embarrassment, or oppression",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_225",
+                    "text": "30(e) Review and Changes: Deponent has 30 days to review transcript/recording and sign statement of changes (form or substance) with reasons",
                     "collapsed": true,
                     "children": []
                   }
@@ -887,12 +974,80 @@
                 "text": "Spoliation: Destruction/alteration of evidence or failure to preserve. Elements: obligation, culpable state of mind, relevance. Common law (negligence can trigger) vs. Rule 37(e) for ESI (severe sanctions require intentional destruction)",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_226",
+                "text": "Chudasama v. Mazda Motor Corp. (11th Cir.): Compel order was abuse of discretion (court failed to rule on MTD and objections first). Default judgment sanctions excessive - required bad faith finding. 26(g) sanctions only 'last resort'. Takeaway: resolve 12(b)(6) and narrow issues BEFORE compelling broad discovery; graduated sanctions required",
+                "collapsed": true,
+                "children": []
               }
             ]
           },
           {
             "id": "node_143",
             "text": "Strategic Sequencing: Initial disclosures → Interrogatories (identify/locate) → Document requests (collect evidence) → Depositions (armed with documents, key witnesses last) → Requests for admissions (narrow issues)",
+            "collapsed": true,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "node_234",
+        "text": "Pretrial Case Management - Rule 16",
+        "collapsed": true,
+        "children": [
+          {
+            "id": "node_235",
+            "text": "Rule 16(a) - Purposes: Expediting disposition, establishing early and continuing control, discouraging wasteful pretrial activities, improving trial quality, facilitating settlement",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_236",
+            "text": "Rule 16(b) - Scheduling Orders: Court issues scheduling order early in case setting deadlines for amendments, motions, discovery. Modification requires 'good cause' - must show diligence, not just consent",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_237",
+            "text": "Rule 16(c) - Attendance and Matters for Consideration: Attorney must have authority to act on all matters; parties must be available for settlement discussions. Critical: authority to discuss ≠ obligation to agree",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_238",
+                "text": "Seven categories: Narrowing issues, managing discovery, resolving legal issues, trial preparation, settlement/ADR, special case management, catch-all",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_239",
+            "text": "Rule 16(d) - Pretrial Orders: Controls the action unless modified by court",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_240",
+            "text": "Rule 16(e) - Final Pretrial Order: Supersedes the pleadings. Can only be modified to prevent 'manifest injustice' (very high standard). Unspoken exclusionary rule - issues not in final pretrial order may be excluded at trial",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_241",
+            "text": "Rule 16(f) - Sanctions: Court may sanction for failure to appear at conference, being substantially unprepared, or disobeying scheduling/pretrial order",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_242",
+            "text": "J.F. Edwards Construction Co. v. Anderson Safeway Guard Rail Corp. (7th Cir.): All sanctions vacated. Rule 16 does NOT authorize compelled stipulations. Standing orders cannot exceed Rule 16's authority (Rule 83). Pretrial is informational, not coercive - not to 'club the parties into submission'",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_243",
+            "text": "Davey v. Lockheed Martin Corp.: Four-factor test for modifying pretrial order under 16(e): (1) prejudice/surprise, (2) ability to cure, (3) disruption to orderly trial, (4) bad faith. Courts can exclude issues via pretrial order but must balance fairness and right to present case",
             "collapsed": true,
             "children": []
           }
@@ -950,6 +1105,12 @@
                 "text": "Effect: Generally operates as adjudication ON THE MERITS. Exceptions (NOT on merits): court order says otherwise, lack of jurisdiction, improper venue, failure to join necessary party",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_227",
+                "text": "Lopez-Gonzalez v. Municipality of Comerio: 'A federal court is not a parking lot for stagnant cases.' Illustrates involuntary dismissal for failure to prosecute",
+                "collapsed": true,
+                "children": []
               }
             ]
           },
@@ -999,6 +1160,30 @@
                 "text": "Timing - 56(b): Anytime until 30 days after close of discovery. 56(d): If facts unavailable, court may defer/deny and allow time. 56(f): Court can grant SJ sua sponte or for non-movant",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_228",
+                "text": "56(c)(4) Affidavit Requirements: Must be (1) made on personal knowledge (affiant must be percipient witness), (2) set out facts admissible in evidence (not conclusory/hearsay), (3) show affiant competent to testify",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_229",
+                "text": "56(d) Discovery Not Yet Complete: If non-movant shows facts unavailable for justification, court may defer/deny motion, allow time for discovery/affidavits, or issue other orders. Protects against premature SJ",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_230",
+                "text": "56(e) Failing to Support/Address a Fact: If party fails to properly support or address a fact, court may: give opportunity to fix, consider fact undisputed, grant SJ if warranted, or issue other appropriate orders",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_231",
+                "text": "56(f) Judgment Independent of Motion: Court can grant SJ on grounds not raised by a party, grant SJ for a non-movant, or identify undisputed facts and treat as established (56(g))",
+                "collapsed": true,
+                "children": []
               }
             ]
           }
@@ -1031,6 +1216,12 @@
                 "text": "Dairy Queen, Inc. v. Wood: Labels don't control jury rights. Contract debt claim is 'undeniably legal' regardless of how pleaded. Legal claims go to jury first; judge bound by jury findings on common issues",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_232",
+                "text": "Rule 38(a): Preserves right to jury trial as declared by 7th Amendment. Rule 2 merged law/equity but 38(a) ensures merger expanded (not contracted) jury rights. Connection to Dairy Queen - labels don't override constitutional right",
+                "collapsed": true,
+                "children": []
               }
             ]
           },
@@ -1054,6 +1245,12 @@
               {
                 "id": "node_169",
                 "text": "Evidence Spectrum: Too little evidence → JMOL against burden-bearer. Reasonable dispute → jury decides. Overwhelming evidence → JMOL for burden-bearer",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_233",
+                "text": "Pennsylvania RR v. Chamberlain: Witness testimony deemed 'incredible' and 'unbelievable.' Positive, uncontradicted testimony of opposing witnesses controlled. Principle: incredible testimony alone cannot create a genuine factual dispute sufficient to defeat JMOL",
                 "collapsed": true,
                 "children": []
               }
