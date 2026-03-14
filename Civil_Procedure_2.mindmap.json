@@ -1,0 +1,1328 @@
+{
+  "version": 1,
+  "name": "Civil Procedure II",
+  "root": {
+    "id": "node_1",
+    "text": "Civil Procedure II",
+    "collapsed": false,
+    "children": [
+      {
+        "id": "node_2",
+        "text": "Pleadings",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_3",
+            "text": "What Are Pleadings? - Parties' initial statements filed before full discovery; parties don't have complete facts when pleading",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_4",
+                "text": "Types: Complaint (Plaintiff, Rule 8(a)) and Answer (Defendant, Rules 8(b)-(c), 13)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_5",
+                "text": "Historical Evolution: Common Law (hypertechnical) → Code Pleading (facts) → Notice Pleading (1938, give notice) → Plausibility Pleading (2007-2009, plausible facts)",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_6",
+            "text": "Complaint Requirements - Rule 8(a)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_7",
+                "text": "8(a)(1): Short and plain statement of grounds for jurisdiction",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_8",
+                "text": "8(a)(2): Short and plain statement of claim showing entitlement to relief - where pleading standards apply",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_9",
+                "text": "8(a)(3): Demand for relief (prayer for judgment) - compensatory, punitive, injunctive, declaratory, attorney's fees, costs",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_10",
+            "text": "Rule 8(d) - Pleading Flexibility",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_11",
+                "text": "8(d)(1): Simple, concise, direct; no technical forms required",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_12",
+                "text": "8(d)(2): Alternative/hypothetical claims permitted",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_13",
+                "text": "8(d)(3): Inconsistent claims permitted (e.g., 'contract invalid' AND 'breach of valid contract')",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_14",
+            "text": "Rule 8(e) - Construction: Pleadings 'must be construed so as to do justice'",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_15",
+            "text": "Rule 10(b) - Form of Pleadings: Numbered paragraphs, each limited to single set of circumstances, separate counts for separate claims",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_16",
+            "text": "Answer - Rule 8(b) & (c)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_17",
+                "text": "Admissions & Denials - Rule 8(b): Admit, Deny, or Lack of Knowledge (functions as denial). Failure to deny = admission",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_18",
+                "text": "Affirmative Defenses - Rule 8(c): Concedes claim arguendo but asserts additional facts defeating liability. Must be pleaded or WAIVED (Ingraham v. United States - can't 'lie behind a log')",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_19",
+                    "text": "Examples: Statute of limitations, release, comparative negligence, waiver, estoppel, laches, fraud, failure of consideration, unclean hands",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "node_20",
+                "text": "Counterclaims - Rule 13",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_21",
+                    "text": "13(a) Compulsory: MUST assert or waived - arises from same transaction/occurrence",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_22",
+                    "text": "13(b) Permissive: MAY assert - any claim not from same transaction/occurrence; can bring later",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "node_23",
+                "text": "Leftover Rule 12(b) defenses not yet waived",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_24",
+            "text": "Rule 9(b) - Heightened Pleading for Fraud: Must allege with specificity when, where, and how fraud was committed. Malice/intent/knowledge may be alleged generally",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_25",
+                "text": "Leatherman v. Tarrant County (1993): Courts cannot extend heightened pleading to categories not listed in Rule 9(b)",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "node_26",
+        "text": "Pleading Standards",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_27",
+            "text": "Notice Pleading Era (1938-2007)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_28",
+                "text": "Conley v. Gibson (1957): Complaint sufficient unless 'beyond doubt plaintiff can prove no set of facts' - low threshold",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_29",
+                "text": "Dioguardi v. Durning (2d Cir. 1944): Pro se barely comprehensible complaint sufficient - court identifies applicable law from alleged facts",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_30",
+                "text": "Characteristics: Low bar, all allegations taken as true, court identifies legal theories, screening shifted to discovery/SJ",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_31",
+            "text": "Plausibility Pleading Era (2007-Present) - Twombly-Iqbal",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_32",
+                "text": "Bell Atlantic v. Twombly (2007): Antitrust case - parallel conduct equally consistent with conspiracy or lawful behavior. 'No set of facts' standard retired. Must plead facts making claim 'plausible on its face'",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_33",
+                "text": "Ashcroft v. Iqbal (2009): Applies Twombly to ALL civil actions, not just antitrust. Based on Rule 8 which governs all civil cases",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_34",
+                "text": "Two-Step Analysis",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_35",
+                    "text": "Step 1: Identify and discard conclusory allegations - 'threadbare recitals of elements' and 'formulaic recitations' get NO presumption of truth",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_36",
+                    "text": "Step 2: Assess whether remaining well-pleaded facts plausibly state a claim. More than possible/conceivable, less than probable. Context-specific using 'judicial experience and common sense'",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "node_37",
+                "text": "Swanson v. Citibank (7th Cir. 2010): Majority (Wood) - plausibility does not equal probability; ask 'could this have happened,' not 'did it happen.' Posner dissent - strict Iqbal reading requiring dismissal when obvious alternative explanation exists",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_38",
+                "text": "Competing Inferences Problem: When facts equally support innocent and guilty explanations, plaintiff must plead something more to make liability more plausible",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_39",
+            "text": "Rule 12(b)(6) Motion to Dismiss",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_40",
+                "text": "Purpose: Attack legal sufficiency - the 'So what?' motion. Used when not legally sufficient or not factually sufficient",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_41",
+                "text": "Court assumes all factual allegations TRUE; does NOT weigh evidence or resolve disputes. If court considers matters outside pleadings → converts to Rule 56 SJ (Rule 12(d))",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_42",
+                "text": "Does NOT decide whether plaintiff will win, resolve factual disputes, or require plaintiff to prove case. Dismissal usually with leave to amend",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_43",
+            "text": "Policy Implications: Favors defendants (dismiss before expensive discovery, info asymmetry). Disadvantages plaintiffs (Catch-22: need facts to plead but facts in defendant's control, only obtainable through discovery)",
+            "collapsed": true,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "node_44",
+        "text": "Rule 11 - Care and Candor",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_45",
+            "text": "Overview: Regulates attorney conduct, requires 'Stop and Think' before signing/filing/submitting/advocating. Standard: 'inquiry reasonable under the circumstances'",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_46",
+            "text": "Rule 11(a) - Signature: At least one attorney of record must sign. Court must strike unsigned paper unless promptly corrected",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_47",
+            "text": "Rule 11(b) - Four Certifications",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_48",
+                "text": "11(b)(1): No improper purpose (harassment, delay, needless cost increase)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_49",
+                "text": "11(b)(2): Legal contentions warranted by existing law OR nonfrivolous argument for extending/modifying/reversing/establishing new law",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_50",
+                "text": "11(b)(3): Factual contentions have evidentiary support OR if specifically identified, will likely have support after reasonable investigation/discovery",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_51",
+                "text": "11(b)(4): Denials warranted on evidence OR reasonably based on belief/lack of info (primarily applies to defendant's answer)",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_52",
+            "text": "Key Cases",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_53",
+                "text": "Hays v. Sony Corp.: Attorney Guyon sanctioned $14,895 for filing common law copyright claim (abolished 1976), seeking unavailable remedies, and doing NO pre-filing investigation. Objective negligence standard - good faith is NO defense",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_54",
+                "text": "Hunter v. Earthgrains: Sanctions VACATED - arguing against controlling precedent (Austin) was non-frivolous because circuit split existed, Supreme Court authority supported her, and attorneys are entitled to argue for change. Losing does NOT equal Rule 11 violation",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_55",
+            "text": "Rule 11(c) - Sanctions",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_56",
+                "text": "Who: Attorneys, law firms, parties. CANNOT impose monetary sanctions on represented party for 11(b)(2) legal basis violations",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_57",
+                "text": "Types: Nonmonetary directives (reprimand, CLE), penalty to court, attorney's fees (only if motion-based). Focus: deterrence, not compensation",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_58",
+                "text": "Pathway 1 - Motion by Opposing Party (Rule 11(c)(2)): Serve motion → 21-day safe harbor to withdraw/correct → if not fixed, file with court",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_59",
+                "text": "Pathway 2 - Sua Sponte (Rule 11(c)(3)): Court issues show cause order. NO safe harbor. Cannot award attorney's fees. Reserved for conduct 'akin to contempt'",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_60",
+            "text": "Rule 11(d): Does NOT apply to discovery (Rule 37 governs discovery sanctions). Oral arguments also NOT subject to Rule 11",
+            "collapsed": true,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "node_61",
+        "text": "Defendant's Response",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_62",
+            "text": "Three Options: File Answer (Rule 8(b),(c)), File Motion to Dismiss (Rule 12(b)), or Do Nothing → Default (Rule 55). Must respond within 21 days (or 60 if waiver of service)",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_63",
+            "text": "Default and Default Judgment - Rule 55",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_64",
+                "text": "Step 1 - Entry of Default (55(a)): Clerk enters when defendant fails to respond within 21 days",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_65",
+                "text": "Step 2 - Default Judgment (55(b)): By clerk (limited) or court (on motion). Setting aside: different standards for 55(a) vs 55(b)",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_66",
+            "text": "Pre-Answer Motions - Rule 12(b)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_67",
+                "text": "12(b)(1) Lack of subject matter jurisdiction",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_68",
+                "text": "12(b)(2) Lack of personal jurisdiction",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_69",
+                "text": "12(b)(3) Improper venue",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_70",
+                "text": "12(b)(4) Insufficient process",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_71",
+                "text": "12(b)(5) Insufficient service of process",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_72",
+                "text": "12(b)(6) Failure to state a claim (most common)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_73",
+                "text": "12(b)(7) Failure to join party under Rule 19",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_74",
+            "text": "Other Rule 12 Motions",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_75",
+                "text": "Rule 12(e) - More Definite Statement: When complaint is 'hopelessly vague' and cannot reasonably prepare response. Rarely granted",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_76",
+                "text": "Rule 12(f) - Motion to Strike: Remove inflammatory, improper, or irrelevant material. Not a substitute for 12(b)(6)",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_77",
+            "text": "The Waiver Trap - CRITICAL CONCEPT",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_78",
+                "text": "Omnibus Motion Rule - 12(g)(2): Must consolidate ALL available Rule 12 defenses in ONE motion (first motion)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_79",
+                "text": "WAIVABLE - Rule 12(h)(1): 12(b)(2)-(5), 12(e), 12(f) - waived if not in first Rule 12 motion OR answer",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_80",
+                "text": "Can Raise Later - Rule 12(h)(2): 12(b)(6) failure to state claim, 12(b)(7) failure to join party - can raise through trial",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_81",
+                "text": "NEVER Waived - Rule 12(h)(3): 12(b)(1) subject matter jurisdiction - can be raised at ANY time, even on appeal",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "node_82",
+        "text": "Amendments to Pleadings - Rule 15",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_83",
+            "text": "General Principle: Liberal amendment permitted. Pleadings filed before full discovery; should reflect educated understanding after investigation. Applies to both plaintiff (complaint) and defendant (answer)",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_84",
+            "text": "Amendments Before Trial - Rule 15(a)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_85",
+                "text": "As Matter of Course - 15(a)(1): ONE TIME ONLY without permission. Within 21 days after serving OR within 21 days after responsive pleading/12(b),(e),(f) motion",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_86",
+                "text": "Other Amendments - 15(a)(2): Need written consent of opposing party OR court's leave. Standard: 'freely give leave when justice so requires'",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_87",
+                    "text": "Foman v. Davis (1962) factors: Undue delay, bad faith/dilatory motive, repeated failure to cure, undue prejudice, futility of amendment",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node_88",
+            "text": "Amendments During/After Trial - Rule 15(b)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_89",
+                "text": "15(b)(1) Based on Objection: Court should freely permit if aids merits and no prejudice shown",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_90",
+                "text": "15(b)(2) Issues Tried by Consent: Issue not in pleadings but tried with express/implied consent treated as if raised in pleadings",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_91",
+            "text": "Relation Back - Rule 15(c)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_92",
+                "text": "Purpose: Allows amendments after statute of limitations has run by 'relating back' to original filing date",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_93",
+                "text": "15(c)(1)(A): Applicable law allows relation back",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_94",
+                "text": "15(c)(1)(B) - New Claim, Same Party: Amendment arises from same conduct/transaction/occurrence as original pleading",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_95",
+                    "text": "Bonerb v. Richard J. Caron Foundation: New claims related to original facts can relate back; defendant already on notice to preserve evidence",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "node_96",
+                "text": "15(c)(1)(C) - New/Corrected Defendant: ALL requirements must be met",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_97",
+                    "text": "(i) Same transaction/occurrence (15(c)(1)(B) satisfied)",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_98",
+                    "text": "(ii) Within 90 days (Rule 4(m)): New defendant received notice AND knew/should have known action would have been brought against it but for mistake in identity",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_99",
+                    "text": "Krupski v. Costa Crociere (2010, SCOTUS): 'Mistake' inquiry focuses on what DEFENDANT knew, not plaintiff's diligence. Shared counsel = notice. Amendment allowed",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_100",
+                    "text": "'Mistake' = about WHO you meant to sue (misnomer, wrong entity), NOT discovering a new wrongdoer",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "node_101",
+        "text": "Discovery - Rules 26-37",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_102",
+            "text": "Scope of Discovery - Rule 26(b)(1)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_103",
+                "text": "Three-Part Test: (1) Not privileged, (2) Relevant to claim/defense, (3) Proportional to needs of case. ALL must be met. Discoverable ≠ Admissible",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_104",
+                "text": "Proportionality - 6 Factors (2015 amendment): Importance of issues, amount in controversy, parties' relative access to info, parties' resources, importance of discovery in resolving issues, burden/expense vs. likely benefit",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_105",
+                "text": "Limits: Privilege (26(b)(1)), irrelevance, disproportionality, cumulative/duplicative (26(b)(2)(C)), work product (26(b)(3)), expert limits (26(b)(4)), protective orders (26(c))",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_106",
+            "text": "Privileges - Discovery 'Full Stop'",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_107",
+                "text": "Privileged info = discovery ends. Relevance and proportionality do NOT override valid privilege",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_108",
+                "text": "Types: Attorney-client, spousal, doctor-patient, psychotherapist-patient (Jaffee v. Redmond), 5th Amendment, clergy-penitent",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_109",
+                "text": "Privilege protects COMMUNICATIONS, not underlying FACTS. Must affirmatively assert + provide privilege log (Rule 26(b)(5)(A))",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_110",
+            "text": "Work Product Doctrine - Rule 26(b)(3)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_111",
+                "text": "Foundation: Hickman v. Taylor (1947) - if attorneys must hand over everything, they stop writing things down; harms clients and justice",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_112",
+                "text": "Six Elements: (1) Document/tangible thing, (2) Prepared in anticipation of litigation (BIGGEST BATTLEGROUND), (3) By/for party or representative, (4) Otherwise discoverable, (5) Substantial need + no equivalent, (6) Must protect opinion work product",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_113",
+                "text": "'Anticipation of Litigation' approaches: Specific Claim (narrowest), Primary Purpose (majority), Ad Hoc/totality (broadest, In re Sealed Case). Key issue: dual-purpose documents",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_114",
+                "text": "Two Tiers: Fact Work Product (qualified - can overcome with substantial need + no equivalent) vs. Opinion Work Product (near-absolute - mental impressions, conclusions, opinions, legal theories virtually never discoverable)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_115",
+                "text": "Rule 26(b)(3)(C): Any person can obtain their OWN prior statement without any special showing",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_116",
+            "text": "Discovery Tools",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_117",
+                "text": "Mandatory Initial Disclosures - Rule 26(a)(1): Automatic exchange within 14 days after 26(f) conference. Witnesses, documents/ESI, damages computation, insurance agreements. Narrower scope: only what disclosing party may use to support its claims/defenses",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_118",
+                "text": "Interrogatories - Rule 33: Written questions to PARTIES only, 25 max, 30-day response, under oath. Good for identifying witnesses/facts/documents. Contention interrogatories allowed. Limited: no follow-up",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_119",
+                    "text": "Rule 33(d): Business Records Option - if answer derivable from records and burden substantially same, responding party can specify records",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "node_120",
+                "text": "Requests for Production - Rule 34: Documents/ESI/things in possession, custody, or control. No numerical limit. 30-day response. Describe with reasonable particularity. Nonparties via Rule 45 subpoena",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_121",
+                "text": "Depositions - Rules 30, 31, 45: Parties AND nonparties. 10-deposition limit, 1 day/7 hours. Oral exam under oath, no judge present. 30(b)(6) organizational depositions",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_122",
+                    "text": "Objections: Form objections (compound, ambiguous) must be made or waived. Substantive (relevance) preserved. Privilege - may instruct not to answer. Objections must be concise, nonargumentative, nonsuggestive",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_123",
+                    "text": "Using at Trial - Rule 32: Layer 1 (Rule 32(a) - proper deposition?) then Layer 2 (FRE - admissible testimony?)",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "node_124",
+                "text": "Physical/Mental Exams - Rule 35: Parties only, requires court order + good cause + condition in controversy. Schlagenhauf v. Holder (1964). Examiner's report must be provided; requesting waives privilege on same condition",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_125",
+                "text": "Requests for Admissions - Rule 36: Parties only. Deemed admitted if no response within 30 days - CONCLUSIVELY established for pending action. Used after other discovery to authenticate docs and narrow issues",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_126",
+            "text": "Expert Discovery",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_127",
+                "text": "Testifying Experts - Rule 26(a)(2)(B): Broad mandatory disclosure - written report with opinions, basis, qualifications, prior testimony, compensation. Can be deposed after report provided",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_128",
+                    "text": "Draft reports protected as work product (26(b)(4)(B)). Attorney-expert communications protected EXCEPT: compensation, facts/data considered, assumptions relied on",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "node_129",
+                "text": "Non-Testifying (Consulting) Experts - Rule 26(b)(4)(D): Discovery ordinarily PROHIBITED. Exception: exceptional circumstances where expert is unique",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_130",
+                "text": "Fact Witness Experts: Treated as ordinary fact witness - only facts/opinions acquired IN ANTICIPATION OF LITIGATION are protected",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_131",
+                "text": "Independent Unretained Experts: Discoverable with substantial need + reasonable compensation (Rule 45(d)(3)(B)(ii))",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_132",
+            "text": "ESI / E-Discovery",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_133",
+                "text": "Rule 26(b)(2)(B): No duty to produce from sources not reasonably accessible due to undue burden/cost. Burden on producing party to show. Court can still order on good cause with cost shifting",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_134",
+                "text": "Litigation Holds (Zubulake IV & V): Once litigation reasonably anticipated, must suspend routine destruction and implement hold. Counsel must oversee compliance",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_135",
+                "text": "Predictive Coding / TAR: Algorithms learn relevance from seed set, review ~1.9% of documents. Widely accepted as 'black letter law'",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_136",
+                "text": "Attorney Competence: Must understand e-discovery or associate with specialists (Waskul v. Washtenaw County, E.D. Mich. 2021)",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_137",
+            "text": "Enforcement & Sanctions",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_138",
+                "text": "Rule 37(a) - Motion to Compel: Must meet and confer first. 'Make them give it to me'",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_139",
+                "text": "Rule 26(c) - Protective Order: Must show good cause and certify good faith meet-and-confer. Court can forbid, limit, prescribe method, seal, protect trade secrets, etc. (26(c)(1)(A)-(H))",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_140",
+                "text": "Rule 37 Sanctions: Discovery failures (37(b)-(d)), nondisclosure (37(c) - self-executing exclusion), ESI spoliation (37(e))",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_141",
+                "text": "Rule 26(g) - Discovery's Rule 11: Must sign all discovery papers certifying completeness, consistency with rules, not for improper purpose, not unreasonable/unduly burdensome",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_142",
+                "text": "Spoliation: Destruction/alteration of evidence or failure to preserve. Elements: obligation, culpable state of mind, relevance. Common law (negligence can trigger) vs. Rule 37(e) for ESI (severe sanctions require intentional destruction)",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_143",
+            "text": "Strategic Sequencing: Initial disclosures → Interrogatories (identify/locate) → Document requests (collect evidence) → Depositions (armed with documents, key witnesses last) → Requests for admissions (narrow issues)",
+            "collapsed": true,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "node_144",
+        "text": "Resolution Without Trial",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_145",
+            "text": "Voluntary Dismissal - Rule 41(a)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_146",
+                "text": "Without Court Order - 41(a)(1): By notice before defendant serves answer or MSJ (self-executing, no approval needed, automatically without prejudice). 12(b)(6) motion does NOT cut off this right (Bath & Kitchen)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_147",
+                "text": "By Stipulation - 41(a)(1)(A)(ii): Signed by ALL parties who have appeared",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_148",
+                "text": "By Court Order - 41(a)(2): Required after answer/MSJ. Court sets terms, generally without prejudice. Cannot force dismissal over defendant's counterclaim objection",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_149",
+                "text": "Two-Dismissal Rule - 41(a)(1)(B): First dismissal = without prejudice. Second dismissal of SAME claim = on the merits, cannot refile",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_150",
+            "text": "Involuntary Dismissal - Rule 41(b)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_151",
+                "text": "Grounds: 12(b) motion granted, failure to prosecute, failure to comply with Rules",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_152",
+                "text": "Effect: Generally operates as adjudication ON THE MERITS. Exceptions (NOT on merits): court order says otherwise, lack of jurisdiction, improper venue, failure to join necessary party",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_153",
+            "text": "Summary Judgment - Rule 56",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_154",
+                "text": "Standard - 56(a): Court SHALL grant if (1) NO genuine dispute as to any material fact AND (2) movant entitled to judgment as a matter of law. 'If facts are not disputed, don't need trial'",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_155",
+                "text": "Movant's Burden: If movant has burden of proof at trial → must show no genuine dispute on EACH element. If non-movant has burden → can show non-movant lacks evidence on at least one dispositive element (Celotex 'show me' motion)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_156",
+                "text": "Non-Movant's Burden (once shifted): Must go BEYOND pleadings - designate specific facts showing genuine dispute. Cannot rely solely on pleading allegations, 'naked assertions,' or hopes of cross-examination (Slaven v. City of Salem)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_157",
+                "text": "Evidence: Must be admissible at trial. Affidavits/declarations must be: (1) personal knowledge, (2) admissible facts, (3) affiant competent to testify (Rule 56(c)(4)). Self-serving declarations not dismissed simply because self-serving (Haley v. Amazon)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_158",
+                "text": "Court MUST NOT: resolve disputes, weigh evidence, assess credibility, or make factual determinations. Only determines if genuine dispute EXISTS",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_159",
+                "text": "Key Cases: Anderson v. Liberty Lobby (material facts identified by substantive law), Celotex Corp. v. Catrett (movant's burden), Palucki v. Sears (fair chance of verdict?)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_160",
+                "text": "Timing - 56(b): Anytime until 30 days after close of discovery. 56(d): If facts unavailable, court may defer/deny and allow time. 56(f): Court can grant SJ sua sponte or for non-movant",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "node_161",
+        "text": "Trial & Post-Trial Motions",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_162",
+            "text": "Seventh Amendment - Right to Jury Trial",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_163",
+                "text": "Preserves right as existed in English courts in 1791. Only 'suits at common law' (not equity/admiralty). Federal courts only. Waivable - must request",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_164",
+                "text": "Common Law (money damages → jury) vs. Equity (injunctions, specific performance → judge decides)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_165",
+                "text": "Dairy Queen, Inc. v. Wood: Labels don't control jury rights. Contract debt claim is 'undeniably legal' regardless of how pleaded. Legal claims go to jury first; judge bound by jury findings on common issues",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_166",
+            "text": "JMOL - Rule 50(a) (formerly Directed Verdict)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_167",
+                "text": "Timing: After opposing party has presented evidence (usually after plaintiff's case-in-chief). Must specify issue, law, and facts",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_168",
+                "text": "Standard: View evidence in light most favorable to non-moving party. If NO reasonable jury could find for non-movant → grant. Court must NOT weigh evidence or make credibility determinations",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_169",
+                "text": "Evidence Spectrum: Too little evidence → JMOL against burden-bearer. Reasonable dispute → jury decides. Overwhelming evidence → JMOL for burden-bearer",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_170",
+            "text": "Renewed JMOL - Rule 50(b) (formerly JNOV)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_171",
+                "text": "Timing: Within 28 days after entry of judgment. PREREQUISITE: Must have made 50(a) motion on SAME grounds at trial - cannot make 50(b) without prior 50(a)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_172",
+                "text": "Standard: Same as 50(a) - if no reasonable jury could have reached verdict. Effect: Overturns jury's verdict",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_173",
+                "text": "Why 50(a) required first: Gives opposing party chance to cure, respects 7th Amendment Reexamination Clause, prevents sandbagging. Cannot appeal denial of 50(a) without filing 50(b)",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_174",
+            "text": "SJ/JMOL/RJMOL Relationship: Same standard (reasonable jury test). SJ = before trial on written evidence. JMOL = during trial on presented evidence. RJMOL = after verdict",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_175",
+            "text": "Controlling the Jury",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_176",
+                "text": "Instructions - Rule 51: Judge instructs on law, parties submit proposed instructions, objections on record",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_177",
+                "text": "Interrogatories - Rule 49: Special verdict (jury answers factual questions, judge applies law) OR General verdict with interrogatories (court checks consistency)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_178",
+                "text": "Impeachment of Verdict: FRE 606(b) - jurors generally cannot testify about deliberations. Exceptions: outside influences, extraneous prejudicial info, error in verdict form",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_179",
+            "text": "New Trial - Rule 59",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_180",
+                "text": "Timing: Within 28 days after entry of judgment",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_181",
+                "text": "Grounds: Errors of law, verdict against weight of evidence (judge MAY weigh evidence), excessive/inadequate damages, newly discovered evidence, juror misconduct, improper jury instructions",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_182",
+                "text": "Standard: Error must be substantial enough to have prejudiced the moving party",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_183",
+            "text": "Relief from Judgment - Rule 60(b)",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_184",
+                "text": "Timing: Reasonable time; specific limits for some grounds (Rule 60(c))",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_185",
+                "text": "Grounds: (1) Mistake/inadvertence/surprise/excusable neglect, (2) Newly discovered evidence, (3) Fraud/misrepresentation/misconduct by opposing party, (4) Judgment is void, (5) Judgment satisfied/released/discharged or based on reversed judgment, (6) Any other reason justifying relief (catch-all, requires extraordinary circumstances)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_186",
+                "text": "Standard: Extraordinary circumstances. Rule 60(b)(6) is a 'last resort'",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "node_187",
+        "text": "Appeal",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_188",
+            "text": "Final Judgment Rule - 28 U.S.C. § 1291: Generally only final judgments (resolving all claims of all parties) are appealable",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_189",
+            "text": "Exceptions to Finality",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_190",
+                "text": "Interlocutory Appeals - 28 U.S.C. § 1292: Orders involving injunctions, Collateral Order Doctrine, Permissive Interlocutory Appeal",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_191",
+                "text": "Writ of Mandamus",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_192",
+            "text": "Notice of Appeal: Must be filed within strict time limit (30 days after entry of judgment - Fed. R. App. P. 4)",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_193",
+            "text": "Standards of Appellate Review",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_194",
+                "text": "Legal conclusions: De Novo review (fresh look)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_195",
+                "text": "Factual findings: Clear error review (deferential)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_196",
+                "text": "Jury verdicts: Substantial evidence review",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_197",
+                "text": "Discretionary rulings: Abuse of discretion review",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_198",
+            "text": "Appellate Court Options: Affirm, Reverse, Remand (send back), Modify",
+            "collapsed": true,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "node_199",
+        "text": "Claim & Issue Preclusion",
+        "collapsed": false,
+        "children": [
+          {
+            "id": "node_200",
+            "text": "Claim Preclusion (Res Judicata) - A final judgment on the merits bars suing again on the SAME claim",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_201",
+                "text": "Element 1 - Final Judgment on the Merits: Rule 41(b) involuntary dismissals usually on merits. Voluntary 2nd dismissal = on merits",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_202",
+                "text": "Element 2 - Same Claim (Transactional Test): Claims are 'same' if arising from same transaction or series of connected transactions",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_203",
+                "text": "Element 3 - Same Parties (or their privies): Parties to first action or those in legal privity",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_204",
+                "text": "Effect: Bars re-litigation of claims that WERE or COULD HAVE BEEN litigated in the first action",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "node_205",
+            "text": "Issue Preclusion (Collateral Estoppel) - Once court decides issue of fact/law necessary to judgment, precludes re-litigation of that issue",
+            "collapsed": true,
+            "children": [
+              {
+                "id": "node_206",
+                "text": "Element 1 - Same Issue: Issue must be identical to one decided in prior action",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_207",
+                "text": "Element 2 - Actually Litigated and Decided: Issue must have been genuinely contested and decided",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_208",
+                "text": "Element 3 - Necessary to the Judgment: Decision on issue must have been essential to prior judgment",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_209",
+                "text": "Element 4 - Final Judgment on the Merits",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_210",
+                "text": "Element 5 - Party against whom preclusion is sought was party/privy to prior action. Mutuality not always required for non-mutual offensive collateral estoppel",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_211",
+                "text": "Effect: Bars re-litigation of the specific ISSUE only, not entire claims",
+                "collapsed": true,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
