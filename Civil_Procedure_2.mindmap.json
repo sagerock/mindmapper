@@ -24,7 +24,7 @@
               },
               {
                 "id": "node_5",
-                "text": "Historical Evolution: Common Law (hypertechnical) → Code Pleading (facts) → Notice Pleading (1938, give notice) → Plausibility Pleading (2007-2009, plausible facts)",
+                "text": "Historical Evolution: Common Law (hypertechnical) \u2192 Code Pleading (facts) \u2192 Notice Pleading (1938, give notice) \u2192 Plausibility Pleading (2007-2009, plausible facts)",
                 "collapsed": true,
                 "children": []
               }
@@ -87,6 +87,18 @@
             "children": []
           },
           {
+            "id": "node_246",
+            "text": "Rule 10(a) - Caption Requirements: Court name, case number (assigned by clerk), parties' names, document title",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_247",
+            "text": "Rule 7(a) - Types of Pleadings Allowed: Designates which documents qualify as 'pleadings' (complaint, answer, reply to counterclaim, etc.)",
+            "collapsed": true,
+            "children": []
+          },
+          {
             "id": "node_15",
             "text": "Rule 10(b) - Form of Pleadings: Numbered paragraphs, each limited to single set of circumstances, separate counts for separate claims",
             "collapsed": true,
@@ -101,7 +113,20 @@
                 "id": "node_17",
                 "text": "Admissions & Denials - Rule 8(b): Admit, Deny, or Lack of Knowledge (functions as denial). Failure to deny = admission",
                 "collapsed": true,
-                "children": []
+                "children": [
+                  {
+                    "id": "node_244",
+                    "text": "Rule 8(b)(4) - Partial Denial: If denying only part of an allegation, must specifically state what is true and deny only the rest",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_245",
+                    "text": "Rule 8(b)(5) - Three Response Options: (1) Admit (treated as true), (2) Deny (issue for trial), (3) Lack of knowledge/information (functions as denial). Failure to deny = admission",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
               },
               {
                 "id": "node_18",
@@ -111,6 +136,12 @@
                   {
                     "id": "node_19",
                     "text": "Examples: Statute of limitations, release, comparative negligence, waiver, estoppel, laches, fraud, failure of consideration, unclean hands",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_249",
+                    "text": "Reis Robotics USA v. Concept Industries: Motion to strike insufficient 'affirmative defenses.' Issues: (1) defenses that are really denials (not affirmative defenses), (2) vague laundry-list defenses ('laches, waiver, estoppel...') too general, (3) 'reserving right to add defenses' not allowed - must plead now or waive",
                     "collapsed": true,
                     "children": []
                   }
@@ -137,7 +168,14 @@
                     "id": "node_212",
                     "text": "13(c) Relief: Counterclaim relief can exceed or differ from plaintiff's requested relief",
                     "collapsed": true,
-                    "children": []
+                    "children": [
+                      {
+                        "id": "node_248",
+                        "text": "King v. Blanton: Equitable waiver of compulsory counterclaims - even if first case settled (not adjudicated), may still bar later lawsuit. Considers judicial efficiency, prejudice, party's knowledge/conduct, opportunity to protect via settlement negotiations",
+                        "collapsed": true,
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               },
@@ -257,7 +295,7 @@
               },
               {
                 "id": "node_41",
-                "text": "Court assumes all factual allegations TRUE; does NOT weigh evidence or resolve disputes. If court considers matters outside pleadings → converts to Rule 56 SJ (Rule 12(d))",
+                "text": "Court assumes all factual allegations TRUE; does NOT weigh evidence or resolve disputes. If court considers matters outside pleadings \u2192 converts to Rule 56 SJ (Rule 12(d))",
                 "collapsed": true,
                 "children": []
               },
@@ -341,6 +379,24 @@
                 "text": "Hunter v. Earthgrains: Sanctions VACATED - arguing against controlling precedent (Austin) was non-frivolous because circuit split existed, Supreme Court authority supported her, and attorneys are entitled to argue for change. Losing does NOT equal Rule 11 violation",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_250",
+                "text": "Blue v. U.S. Dept. of Army: Chief Judge Wilkinson warned Rule 11 must not chill advocacy for legal change. 'If arguing against precedent were forbidden, the parties who brought Brown v. Board of Education might have been thought to have engaged in sanctionable conduct for pursuing claims in the face of Plessy v. Ferguson.'",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_251",
+                "text": "Austin v. Owens-Brockway (4th Cir. 1996): Controlling precedent that general CBA arbitration clauses DO apply to statutory discrimination claims. Was the precedent Hunter argued against in Hunter v. Earthgrains",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_252",
+                "text": "Wright v. Universal Maritime Service Corp. (1998, SCOTUS): Supreme Court validated Hunter's legal theory after she filed but before sanctions were imposed. Demonstrates that arguing against controlling precedent can be vindicated",
+                "collapsed": true,
+                "children": []
               }
             ]
           },
@@ -382,7 +438,7 @@
               },
               {
                 "id": "node_58",
-                "text": "Pathway 1 - Motion by Opposing Party (Rule 11(c)(2)): Serve motion → 21-day safe harbor to withdraw/correct → if not fixed, file with court",
+                "text": "Pathway 1 - Motion by Opposing Party (Rule 11(c)(2)): Serve motion \u2192 21-day safe harbor to withdraw/correct \u2192 if not fixed, file with court",
                 "collapsed": true,
                 "children": []
               },
@@ -409,9 +465,16 @@
         "children": [
           {
             "id": "node_62",
-            "text": "Three Options: File Answer (Rule 8(b),(c)), File Motion to Dismiss (Rule 12(b)), or Do Nothing → Default (Rule 55). Must respond within 21 days (or 60 if waiver of service)",
+            "text": "Three Options: File Answer (Rule 8(b),(c)), File Motion to Dismiss (Rule 12(b)), or Do Nothing \u2192 Default (Rule 55). Must respond within 21 days (or 60 if waiver of service)",
             "collapsed": true,
-            "children": []
+            "children": [
+              {
+                "id": "node_253",
+                "text": "Rule 12(a)(1) - Timing: Must file answer or Rule 12 motion within 21 days after service. Exception: 60 days if defendant timely returns waiver of service",
+                "collapsed": true,
+                "children": []
+              }
+            ]
           },
           {
             "id": "node_63",
@@ -427,6 +490,12 @@
               {
                 "id": "node_65",
                 "text": "Step 2 - Default Judgment (55(b)): By clerk (limited) or court (on motion). Setting aside: different standards for 55(a) vs 55(b)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_254",
+                "text": "Rule 55(c) - Setting Aside Default: Different standards apply depending on stage. Setting aside entry of default (55(a)) = lower standard ('good cause'). Setting aside default judgment (55(b)) = higher standard (must meet Rule 60(b) requirements)",
                 "collapsed": true,
                 "children": []
               }
@@ -495,6 +564,12 @@
               {
                 "id": "node_76",
                 "text": "Rule 12(f) - Motion to Strike: Remove inflammatory, improper, or irrelevant material. Not a substitute for 12(b)(6)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_255",
+                "text": "Matos v. Nextran: Illustrates Rules 12(e) and 12(f). 12(e) issue: complaint incorporated prior paragraphs by reference without separating warranty claims. 12(f) issue: strike references to 'illegal conduct' and 'all damages of every kind' as inflammatory/improper",
                 "collapsed": true,
                 "children": []
               }
@@ -569,6 +644,12 @@
                   {
                     "id": "node_87",
                     "text": "Foman v. Davis (1962) factors: Undue delay, bad faith/dilatory motive, repeated failure to cure, undue prejudice, futility of amendment",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_256",
+                    "text": "Beeck v. Aqua Slide 'N' Dive: Liberal standard for granting leave to amend. Focus on prejudice (preparation prejudice, not merits) and futility (e.g., SOL run, fails to state claim). Reinforces Foman v. Davis 'freely give leave' approach",
                     "collapsed": true,
                     "children": []
                   }
@@ -679,7 +760,7 @@
             "children": [
               {
                 "id": "node_103",
-                "text": "Three-Part Test: (1) Not privileged, (2) Relevant to claim/defense, (3) Proportional to needs of case. ALL must be met. Discoverable ≠ Admissible",
+                "text": "Three-Part Test: (1) Not privileged, (2) Relevant to claim/defense, (3) Proportional to needs of case. ALL must be met. Discoverable \u2260 Admissible",
                 "collapsed": true,
                 "children": []
               },
@@ -692,6 +773,12 @@
               {
                 "id": "node_105",
                 "text": "Limits: Privilege (26(b)(1)), irrelevance, disproportionality, cumulative/duplicative (26(b)(2)(C)), work product (26(b)(3)), expert limits (26(b)(4)), protective orders (26(c))",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_257",
+                "text": "Rule 1 - Foundational Purpose: 'Just, speedy, and inexpensive determination of every action.' Underlies all discovery proportionality analysis and guides interpretation of discovery rules",
                 "collapsed": true,
                 "children": []
               }
@@ -756,6 +843,24 @@
                 "text": "Rule 26(b)(3)(C): Any person can obtain their OWN prior statement without any special showing",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_258",
+                "text": "Rule 26(b)(3)(A) - Fact/Ordinary Work Product: Qualified protection only. Can be overcome if requesting party shows (1) substantial need for the materials AND (2) cannot obtain substantial equivalent without undue hardship",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_259",
+                "text": "Rule 26(b)(3)(B) - Opinion Work Product: Near-absolute protection for mental impressions, conclusions, opinions, and legal theories of attorneys. Virtually never discoverable regardless of need",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_260",
+                "text": "Coastal States Gas Corp.: Narrowest 'specific claim' test for anticipation of litigation - requires a specific claim supported by concrete facts that make litigation likely. Contrasts with broader 'primary purpose' (majority) and 'ad hoc/totality' (In re Sealed Case) approaches",
+                "collapsed": true,
+                "children": []
               }
             ]
           },
@@ -799,6 +904,18 @@
                     "text": "Rule 33(d): Business Records Option - if answer derivable from records and burden substantially same, responding party can specify records",
                     "collapsed": true,
                     "children": []
+                  },
+                  {
+                    "id": "node_266",
+                    "text": "Rule 33(b)(1)(B) - Corporate Answering Obligation: Corporate parties must furnish ALL information available to the organization, including information known to employees, agents, and lawyers. Must conduct reasonable inquiry",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_267",
+                    "text": "Rule 33(c) - Use at Trial: Interrogatory answers usable at trial to the extent allowed by the Federal Rules of Evidence",
+                    "collapsed": true,
+                    "children": []
                   }
                 ]
               },
@@ -806,7 +923,20 @@
                 "id": "node_120",
                 "text": "Requests for Production - Rule 34: Documents/ESI/things in possession, custody, or control. No numerical limit. 30-day response. Describe with reasonable particularity. Nonparties via Rule 45 subpoena",
                 "collapsed": true,
-                "children": []
+                "children": [
+                  {
+                    "id": "node_268",
+                    "text": "Rule 34(b) - Procedure: Describe items with reasonable particularity; 30-day response period; must specify form for ESI production; may object with specificity (unstated grounds waived)",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_269",
+                    "text": "Rule 34(c) - Nonparties: Documents from nonparties obtained via Rule 45 subpoena (cannot serve Rule 34 requests on nonparties)",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
               },
               {
                 "id": "node_121",
@@ -854,6 +984,30 @@
                     "text": "30(e) Review and Changes: Deponent has 30 days to review transcript/recording and sign statement of changes (form or substance) with reasons",
                     "collapsed": true,
                     "children": []
+                  },
+                  {
+                    "id": "node_270",
+                    "text": "Rule 30(b)(5) - Officer's Duties: Must make on-record statement of name/address, date/time/place, deponent's name, oath administration, persons present. Must avoid distortion of appearance/demeanor. Must state on record when deposition is complete",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_271",
+                    "text": "Rule 30(f) - Certification/Delivery/Filing: Officer certifies witness was sworn and testimony accurately recorded. Documents produced during deposition marked for identification and attached. Attorney stores transcript under protective conditions",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_272",
+                    "text": "Rule 30(g) - Failure to Attend: Party who attends expecting a deposition may recover reasonable expenses if noticing party fails to attend or fails to subpoena a nonparty deponent",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_273",
+                    "text": "Rule 32(d)(3) - Deposition Objection Waiver: (A) Substantive/competency objections (relevance, etc.) preserved until trial - NOT waived. (B) Form objections (compound, ambiguous, leading) MUST be made at deposition or permanently waived",
+                    "collapsed": true,
+                    "children": []
                   }
                 ]
               },
@@ -867,7 +1021,51 @@
                 "id": "node_125",
                 "text": "Requests for Admissions - Rule 36: Parties only. Deemed admitted if no response within 30 days - CONCLUSIVELY established for pending action. Used after other discovery to authenticate docs and narrow issues",
                 "collapsed": true,
-                "children": []
+                "children": [
+                  {
+                    "id": "node_274",
+                    "text": "Rule 36(a)(6) - Sufficiency of Answer/Objection: Court may determine sufficiency of an answer or objection on motion. Cannot object solely because the request presents a genuine issue for trial",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "node_275",
+                "text": "Subpoenas - Rule 45 (Nonparties)",
+                "collapsed": true,
+                "children": [
+                  {
+                    "id": "node_276",
+                    "text": "Rule 45(a) - Form and Contents: Must state issuing court, action title/number, command (attend/testify, produce documents/ESI/things, permit inspection), and text of Rules 45(d) and (e). Must issue from court where action is pending",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_277",
+                    "text": "Rule 45(b) - Service: By any person at least 18 and not a party. Must tender 1 day's attendance fees and mileage (unless U.S. government). May be served anywhere in the United States",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_278",
+                    "text": "Rule 45(c) - Place of Compliance (100-Mile Rule): Testimony/deposition: within 100 miles of residence/employment/regular business. Document production: within 100 miles of same. State exception for parties/officers",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_279",
+                    "text": "Rule 45(e) - Duties in Responding: Documents produced as kept in ordinary course or organized/labeled to match demand. ESI in ordinary or reasonably usable form. Privilege claims must be expressly made with sufficient description",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_280",
+                    "text": "Rule 45(g) - Contempt: Court may hold in contempt any person who fails without adequate excuse to obey a subpoena",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -876,6 +1074,12 @@
             "text": "Expert Discovery",
             "collapsed": true,
             "children": [
+              {
+                "id": "node_261",
+                "text": "Rule 26(a)(2)(A) - Must disclose identity of ANY witness who may present evidence under FRE 702, 703, or 705 (not just retained experts)",
+                "collapsed": true,
+                "children": []
+              },
               {
                 "id": "node_127",
                 "text": "Testifying Experts - Rule 26(a)(2)(B): Broad mandatory disclosure - written report with opinions, basis, qualifications, prior testimony, compensation. Can be deposed after report provided",
@@ -904,6 +1108,30 @@
               {
                 "id": "node_131",
                 "text": "Independent Unretained Experts: Discoverable with substantial need + reasonable compensation (Rule 45(d)(3)(B)(ii))",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_262",
+                "text": "Rule 26(a)(2)(C) - Summary Disclosure: For experts not requiring full written reports (e.g., treating physicians, employee experts). Must disclose: (i) subject matter of expected testimony, (ii) summary of facts and opinions",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_263",
+                "text": "Rule 26(a)(2)(D) - Expert Disclosure Timing: At least 90 days before trial (absent court order). Rebuttal evidence: within 30 days after other party's disclosure",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_264",
+                "text": "Rule 26(a)(2)(E) - Duty to Supplement: Must supplement expert disclosures as required under Rule 26(e)",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_265",
+                "text": "Rule 26(b)(4)(A) - Deposition of Testifying Experts: May depose any identified testifying expert, but if report is required, deposition may occur ONLY after the report is provided",
                 "collapsed": true,
                 "children": []
               }
@@ -961,13 +1189,33 @@
                 "id": "node_140",
                 "text": "Rule 37 Sanctions: Discovery failures (37(b)-(d)), nondisclosure (37(c) - self-executing exclusion), ESI spoliation (37(e))",
                 "collapsed": true,
-                "children": []
+                "children": [
+                  {
+                    "id": "node_282",
+                    "text": "Rule 37(b)(2)(A) - Sanctions for Failure to Comply with Discovery Order: (i) establishing designated facts as established, (ii) prohibiting disobedient party from supporting/opposing claims or introducing evidence, (iii) striking pleadings, (iv) staying proceedings, (v) dismissing action, (vi) rendering default judgment, plus (vii) treating as contempt",
+                    "collapsed": true,
+                    "children": []
+                  },
+                  {
+                    "id": "node_283",
+                    "text": "Rule 37(c)(1) - Failure to Disclose/Supplement: Self-executing exclusion sanction (no motion needed). Exception: substantially justified or harmless. Sub-provisions: (A) payment of reasonable expenses including fees, (B) informing jury of failure, (C) other appropriate sanctions including 37(b)(2)(A) orders",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
               },
               {
                 "id": "node_141",
                 "text": "Rule 26(g) - Discovery's Rule 11: Must sign all discovery papers certifying completeness, consistency with rules, not for improper purpose, not unreasonable/unduly burdensome",
                 "collapsed": true,
-                "children": []
+                "children": [
+                  {
+                    "id": "node_281",
+                    "text": "Rule 26(g)(1) - Specific Certification: Signature certifies that disclosure is complete and correct as of the time made; discovery request/response/objection is: (1) consistent with rules and warranted by law, (2) not interposed for improper purpose, (3) not unreasonable or unduly burdensome given proportionality needs",
+                    "collapsed": true,
+                    "children": []
+                  }
+                ]
               },
               {
                 "id": "node_142",
@@ -984,8 +1232,14 @@
             ]
           },
           {
+            "id": "node_284",
+            "text": "Gaylord v. Homemakers: Informal pre-filing investigation is permissible. Rule 4.2 no-contact rule not violated when no lawsuit yet filed and no knowledge opposing party had counsel. Ethics violations do NOT trigger exclusionary rule - ethics rules govern lawyer discipline, not evidence admissibility",
+            "collapsed": true,
+            "children": []
+          },
+          {
             "id": "node_143",
-            "text": "Strategic Sequencing: Initial disclosures → Interrogatories (identify/locate) → Document requests (collect evidence) → Depositions (armed with documents, key witnesses last) → Requests for admissions (narrow issues)",
+            "text": "Strategic Sequencing: Initial disclosures \u2192 Interrogatories (identify/locate) \u2192 Document requests (collect evidence) \u2192 Depositions (armed with documents, key witnesses last) \u2192 Requests for admissions (narrow issues)",
             "collapsed": true,
             "children": []
           }
@@ -1010,7 +1264,7 @@
           },
           {
             "id": "node_237",
-            "text": "Rule 16(c) - Attendance and Matters for Consideration: Attorney must have authority to act on all matters; parties must be available for settlement discussions. Critical: authority to discuss ≠ obligation to agree",
+            "text": "Rule 16(c) - Attendance and Matters for Consideration: Attorney must have authority to act on all matters; parties must be available for settlement discussions. Critical: authority to discuss \u2260 obligation to agree",
             "collapsed": true,
             "children": [
               {
@@ -1127,7 +1381,7 @@
               },
               {
                 "id": "node_155",
-                "text": "Movant's Burden: If movant has burden of proof at trial → must show no genuine dispute on EACH element. If non-movant has burden → can show non-movant lacks evidence on at least one dispositive element (Celotex 'show me' motion)",
+                "text": "Movant's Burden: If movant has burden of proof at trial \u2192 must show no genuine dispute on EACH element. If non-movant has burden \u2192 can show non-movant lacks evidence on at least one dispositive element (Celotex 'show me' motion)",
                 "collapsed": true,
                 "children": []
               },
@@ -1184,6 +1438,24 @@
                 "text": "56(f) Judgment Independent of Motion: Court can grant SJ on grounds not raised by a party, grant SJ for a non-movant, or identify undisputed facts and treat as established (56(g))",
                 "collapsed": true,
                 "children": []
+              },
+              {
+                "id": "node_285",
+                "text": "Rule 56(c)(1) - Supporting Factual Assertions: Party must cite to particular parts of record materials - depositions, documents, ESI, affidavits/declarations, stipulations, admissions, interrogatory answers, or other materials",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_286",
+                "text": "Rule 56(c)(2) - Admissibility Objection: Party may object that material cited to support or dispute a fact cannot be presented in a form that would be admissible in evidence",
+                "collapsed": true,
+                "children": []
+              },
+              {
+                "id": "node_287",
+                "text": "Rule 56(h) - Bad Faith Affidavits: If affidavit submitted in bad faith or solely for delay, court may order payment of reasonable expenses (including attorney's fees) or impose sanctions including contempt of court",
+                "collapsed": true,
+                "children": []
               }
             ]
           }
@@ -1207,7 +1479,7 @@
               },
               {
                 "id": "node_164",
-                "text": "Common Law (money damages → jury) vs. Equity (injunctions, specific performance → judge decides)",
+                "text": "Common Law (money damages \u2192 jury) vs. Equity (injunctions, specific performance \u2192 judge decides)",
                 "collapsed": true,
                 "children": []
               },
@@ -1238,13 +1510,13 @@
               },
               {
                 "id": "node_168",
-                "text": "Standard: View evidence in light most favorable to non-moving party. If NO reasonable jury could find for non-movant → grant. Court must NOT weigh evidence or make credibility determinations",
+                "text": "Standard: View evidence in light most favorable to non-moving party. If NO reasonable jury could find for non-movant \u2192 grant. Court must NOT weigh evidence or make credibility determinations",
                 "collapsed": true,
                 "children": []
               },
               {
                 "id": "node_169",
-                "text": "Evidence Spectrum: Too little evidence → JMOL against burden-bearer. Reasonable dispute → jury decides. Overwhelming evidence → JMOL for burden-bearer",
+                "text": "Evidence Spectrum: Too little evidence \u2192 JMOL against burden-bearer. Reasonable dispute \u2192 jury decides. Overwhelming evidence \u2192 JMOL for burden-bearer",
                 "collapsed": true,
                 "children": []
               },
@@ -1284,6 +1556,12 @@
           {
             "id": "node_174",
             "text": "SJ/JMOL/RJMOL Relationship: Same standard (reasonable jury test). SJ = before trial on written evidence. JMOL = during trial on presented evidence. RJMOL = after verdict",
+            "collapsed": true,
+            "children": []
+          },
+          {
+            "id": "node_288",
+            "text": "Rule 32(d)(3) - Deposition Objections at Trial: (A) Substantive/competency objections (relevance, hearsay) are preserved until trial and ruled on at that time. (B) Form objections (leading, compound, ambiguous) are permanently waived if not made during the deposition",
             "collapsed": true,
             "children": []
           },
@@ -1371,7 +1649,7 @@
         "children": [
           {
             "id": "node_188",
-            "text": "Final Judgment Rule - 28 U.S.C. § 1291: Generally only final judgments (resolving all claims of all parties) are appealable",
+            "text": "Final Judgment Rule - 28 U.S.C. \u00a7 1291: Generally only final judgments (resolving all claims of all parties) are appealable",
             "collapsed": true,
             "children": []
           },
@@ -1382,7 +1660,7 @@
             "children": [
               {
                 "id": "node_190",
-                "text": "Interlocutory Appeals - 28 U.S.C. § 1292: Orders involving injunctions, Collateral Order Doctrine, Permissive Interlocutory Appeal",
+                "text": "Interlocutory Appeals - 28 U.S.C. \u00a7 1292: Orders involving injunctions, Collateral Order Doctrine, Permissive Interlocutory Appeal",
                 "collapsed": true,
                 "children": []
               },
